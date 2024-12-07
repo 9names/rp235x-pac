@@ -2809,12 +2809,12 @@ pub struct Peripherals {
     pub IO_BANK0: IO_BANK0,
     #[doc = "IO_QSPI"]
     pub IO_QSPI: IO_QSPI,
-    #[doc = "OTP"]
-    pub OTP: OTP,
     #[doc = "OTP_DATA"]
     pub OTP_DATA: OTP_DATA,
     #[doc = "OTP_DATA_RAW"]
     pub OTP_DATA_RAW: OTP_DATA_RAW,
+    #[doc = "OTP"]
+    pub OTP: OTP,
     #[doc = "PADS_BANK0"]
     pub PADS_BANK0: PADS_BANK0,
     #[doc = "PADS_QSPI"]
@@ -2831,10 +2831,10 @@ pub struct Peripherals {
     pub PLL_USB: PLL_USB,
     #[doc = "POWMAN"]
     pub POWMAN: POWMAN,
-    #[doc = "PPB"]
-    pub PPB: PPB,
     #[doc = "PPB_NS"]
     pub PPB_NS: PPB_NS,
+    #[doc = "PPB"]
+    pub PPB: PPB,
     #[doc = "PSM"]
     pub PSM: PSM,
     #[doc = "PWM"]
@@ -2847,10 +2847,10 @@ pub struct Peripherals {
     pub ROSC: ROSC,
     #[doc = "SHA256"]
     pub SHA256: SHA256,
-    #[doc = "SIO"]
-    pub SIO: SIO,
     #[doc = "SIO_NS"]
     pub SIO_NS: SIO_NS,
+    #[doc = "SIO"]
+    pub SIO: SIO,
     #[doc = "SPI0"]
     pub SPI0: SPI0,
     #[doc = "SPI1"]
@@ -2873,10 +2873,10 @@ pub struct Peripherals {
     pub UART0: UART0,
     #[doc = "UART1"]
     pub UART1: UART1,
-    #[doc = "USB"]
-    pub USB: USB,
     #[doc = "USB_DPRAM"]
     pub USB_DPRAM: USB_DPRAM,
+    #[doc = "USB"]
+    pub USB: USB,
     #[doc = "WATCHDOG"]
     pub WATCHDOG: WATCHDOG,
     #[doc = "XIP_AUX"]
