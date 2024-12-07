@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Privileged IRQ. If 1, this IRQ's control registers can only be accessed from a Privileged context. If 0, this IRQ's control registers can be accessed from an Unprivileged context, but Privileged channels (as per SECCFG_CHx) are masked from the IRQ status, and this IRQ's registers can not be used to acknowledge the channel interrupts of Privileged channels."]
     #[inline(always)]
-    #[must_use]
     pub fn p(&mut self) -> P_W<SECCFG_IRQ3_SPEC> {
         P_W::new(self, 0)
     }
     #[doc = "Bit 1 - Secure IRQ. If 1, this IRQ's control registers can only be accessed from a Secure context. If 0, this IRQ's control registers can be accessed from a Non-secure context, but Secure channels (as per SECCFG_CHx) are masked from the IRQ status, and this IRQ's registers can not be used to acknowledge the channel interrupts of Secure channels."]
     #[inline(always)]
-    #[must_use]
     pub fn s(&mut self) -> S_W<SECCFG_IRQ3_SPEC> {
         S_W::new(self, 1)
     }

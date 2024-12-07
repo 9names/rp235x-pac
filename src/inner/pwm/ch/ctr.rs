@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn ctr(&mut self) -> CTR_W<CTR_SPEC> {
         CTR_W::new(self, 0)
     }

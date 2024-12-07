@@ -51,7 +51,6 @@ impl R {
 impl W {
     #[doc = "Bit 2 - Ring oscillator was seen up and running"]
     #[inline(always)]
-    #[must_use]
     pub fn rosc_up_seen(&mut self) -> ROSC_UP_SEEN_W<DBG_SPEC> {
         ROSC_UP_SEEN_W::new(self, 2)
     }

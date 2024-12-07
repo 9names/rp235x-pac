@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:7 - This register must be set before any I2C bus transaction can take place to ensure stable operation. This register sets the duration, measured in ic_clk cycles, of the longest spike in the SCL or SDA lines that will be filtered out by the spike suppression logic. This register can be written only when the I2C interface is disabled which corresponds to the IC_ENABLE\\[0\\]
 register being set to 0. Writes at other times have no effect. The minimum valid value is 1; hardware prevents values less than this being written, and if attempted results in 1 being set. or more information, refer to 'Spike Suppression'."]
     #[inline(always)]
-    #[must_use]
     pub fn ic_fs_spklen(&mut self) -> IC_FS_SPKLEN_W<IC_FS_SPKLEN_SPEC> {
         IC_FS_SPKLEN_W::new(self, 0)
     }

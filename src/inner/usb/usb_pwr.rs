@@ -61,37 +61,31 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_en(&mut self) -> VBUS_EN_W<USB_PWR_SPEC> {
         VBUS_EN_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_en_override_en(&mut self) -> VBUS_EN_OVERRIDE_EN_W<USB_PWR_SPEC> {
         VBUS_EN_OVERRIDE_EN_W::new(self, 1)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_detect(&mut self) -> VBUS_DETECT_W<USB_PWR_SPEC> {
         VBUS_DETECT_W::new(self, 2)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    #[must_use]
     pub fn vbus_detect_override_en(&mut self) -> VBUS_DETECT_OVERRIDE_EN_W<USB_PWR_SPEC> {
         VBUS_DETECT_OVERRIDE_EN_W::new(self, 3)
     }
     #[doc = "Bit 4"]
     #[inline(always)]
-    #[must_use]
     pub fn overcurr_detect(&mut self) -> OVERCURR_DETECT_W<USB_PWR_SPEC> {
         OVERCURR_DETECT_W::new(self, 4)
     }
     #[doc = "Bit 5"]
     #[inline(always)]
-    #[must_use]
     pub fn overcurr_detect_en(&mut self) -> OVERCURR_DETECT_EN_W<USB_PWR_SPEC> {
         OVERCURR_DETECT_EN_W::new(self, 5)
     }

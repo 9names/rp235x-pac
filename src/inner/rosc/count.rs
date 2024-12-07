@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn count(&mut self) -> COUNT_W<COUNT_SPEC> {
         COUNT_W::new(self, 0)
     }

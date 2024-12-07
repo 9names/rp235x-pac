@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For CLRPEND\\[m\\]
 in NVIC_ICPR*n, indicates whether interrupt 32*n + m is pending"]
     #[inline(always)]
-    #[must_use]
     pub fn clrpend(&mut self) -> CLRPEND_W<NVIC_ICPR1_SPEC> {
         CLRPEND_W::new(self, 0)
     }

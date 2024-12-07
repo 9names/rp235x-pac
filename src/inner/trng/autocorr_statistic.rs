@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:13 - Count each time an autocorrelation test starts. Any write to the register reset the counter. Stop collecting statistic if one of the counters reached the limit."]
     #[inline(always)]
-    #[must_use]
     pub fn autocorr_trys(&mut self) -> AUTOCORR_TRYS_W<AUTOCORR_STATISTIC_SPEC> {
         AUTOCORR_TRYS_W::new(self, 0)
     }
     #[doc = "Bits 14:21 - Count each time an autocorrelation test fails. Any write to the register reset the counter. Stop collecting statistic if one of the counters reached the limit."]
     #[inline(always)]
-    #[must_use]
     pub fn autocorr_fails(&mut self) -> AUTOCORR_FAILS_W<AUTOCORR_STATISTIC_SPEC> {
         AUTOCORR_FAILS_W::new(self, 14)
     }

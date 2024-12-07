@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Set bit n to pass interrupts from channel n to DMA IRQ 3. Note this bit has no effect if the channel security/privilege level, defined by SECCFG_CHx, is greater than the IRQ security/privilege defined by SECCFG_IRQ3."]
     #[inline(always)]
-    #[must_use]
     pub fn inte3(&mut self) -> INTE3_W<INTE3_SPEC> {
         INTE3_W::new(self, 0)
     }

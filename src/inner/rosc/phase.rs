@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:1 - phase shift the phase-shifted output by SHIFT input clocks this can be changed on-the-fly must be set to 0 before setting div=1"]
     #[inline(always)]
-    #[must_use]
     pub fn shift(&mut self) -> SHIFT_W<PHASE_SPEC> {
         SHIFT_W::new(self, 0)
     }
     #[doc = "Bit 2 - invert the phase-shifted output this is ignored when div=1"]
     #[inline(always)]
-    #[must_use]
     pub fn flip(&mut self) -> FLIP_W<PHASE_SPEC> {
         FLIP_W::new(self, 2)
     }
     #[doc = "Bit 3 - enable the phase-shifted output this can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<PHASE_SPEC> {
         ENABLE_W::new(self, 3)
     }
     #[doc = "Bits 4:11 - set to 0xaa any other value enables the output with shift=0"]
     #[inline(always)]
-    #[must_use]
     pub fn passwd(&mut self) -> PASSWD_W<PHASE_SPEC> {
         PASSWD_W::new(self, 4)
     }

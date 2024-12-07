@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Integration mode enable bit - The possible values are: 0 - The trace unit is not in integration mode. 1 - The trace unit is in integration mode. This mode enables: A debug agent to perform topology detection. SoC test software to perform integration testing."]
     #[inline(always)]
-    #[must_use]
     pub fn ime(&mut self) -> IME_W<ITM_ITCTRL_SPEC> {
         IME_W::new(self, 0)
     }

@@ -7,7 +7,6 @@ pub type TIMEHW_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn timehw(&mut self) -> TIMEHW_W<TIMEHW_SPEC> {
         TIMEHW_W::new(self, 0)
     }

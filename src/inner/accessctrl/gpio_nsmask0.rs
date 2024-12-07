@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_nsmask0(&mut self) -> GPIO_NSMASK0_W<GPIO_NSMASK0_SPEC> {
         GPIO_NSMASK0_W::new(self, 0)
     }

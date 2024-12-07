@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn irq(&mut self) -> IRQ_W<IRQ_SPEC> {
         IRQ_W::new(self, 0)
     }

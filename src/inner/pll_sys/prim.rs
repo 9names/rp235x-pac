@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 12:14 - divide by 1-7"]
     #[inline(always)]
-    #[must_use]
     pub fn postdiv2(&mut self) -> POSTDIV2_W<PRIM_SPEC> {
         POSTDIV2_W::new(self, 12)
     }
     #[doc = "Bits 16:18 - divide by 1-7"]
     #[inline(always)]
-    #[must_use]
     pub fn postdiv1(&mut self) -> POSTDIV1_W<PRIM_SPEC> {
         POSTDIV1_W::new(self, 16)
     }

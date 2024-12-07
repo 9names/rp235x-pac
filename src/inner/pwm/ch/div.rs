@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    #[must_use]
     pub fn frac(&mut self) -> FRAC_W<DIV_SPEC> {
         FRAC_W::new(self, 0)
     }
     #[doc = "Bits 4:11"]
     #[inline(always)]
-    #[must_use]
     pub fn int(&mut self) -> INT_W<DIV_SPEC> {
         INT_W::new(self, 4)
     }

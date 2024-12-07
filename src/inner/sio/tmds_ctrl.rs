@@ -200,61 +200,51 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Right-rotate the 16 LSBs of the colour accumulator by 0-15 bits, in order to get the MSB of the lane 0 (blue) colour data aligned with the MSB of the 8-bit encoder input. For example, for RGB565 (red most significant), blue is bits 4:0, so should be right-rotated by 13 to align with bits 7:3 of the encoder input."]
     #[inline(always)]
-    #[must_use]
     pub fn l0_rot(&mut self) -> L0_ROT_W<TMDS_CTRL_SPEC> {
         L0_ROT_W::new(self, 0)
     }
     #[doc = "Bits 4:7 - Right-rotate the 16 LSBs of the colour accumulator by 0-15 bits, in order to get the MSB of the lane 1 (green) colour data aligned with the MSB of the 8-bit encoder input. For example, for RGB565, green is bits 10:5, so should be right-rotated by 3 bits to align with bits 7:2 of the encoder input."]
     #[inline(always)]
-    #[must_use]
     pub fn l1_rot(&mut self) -> L1_ROT_W<TMDS_CTRL_SPEC> {
         L1_ROT_W::new(self, 4)
     }
     #[doc = "Bits 8:11 - Right-rotate the 16 LSBs of the colour accumulator by 0-15 bits, in order to get the MSB of the lane 2 (red) colour data aligned with the MSB of the 8-bit encoder input. For example, for RGB565 (red most significant), red is bits 15:11, so should be right-rotated by 8 bits to align with bits 7:3 of the encoder input."]
     #[inline(always)]
-    #[must_use]
     pub fn l2_rot(&mut self) -> L2_ROT_W<TMDS_CTRL_SPEC> {
         L2_ROT_W::new(self, 8)
     }
     #[doc = "Bits 12:14 - Number of valid colour MSBs for lane 0 (1-8 bits, encoded as 0 through 7). Remaining LSBs are masked to 0 after the rotate."]
     #[inline(always)]
-    #[must_use]
     pub fn l0_nbits(&mut self) -> L0_NBITS_W<TMDS_CTRL_SPEC> {
         L0_NBITS_W::new(self, 12)
     }
     #[doc = "Bits 15:17 - Number of valid colour MSBs for lane 1 (1-8 bits, encoded as 0 through 7). Remaining LSBs are masked to 0 after the rotate."]
     #[inline(always)]
-    #[must_use]
     pub fn l1_nbits(&mut self) -> L1_NBITS_W<TMDS_CTRL_SPEC> {
         L1_NBITS_W::new(self, 15)
     }
     #[doc = "Bits 18:20 - Number of valid colour MSBs for lane 2 (1-8 bits, encoded as 0 through 7). Remaining LSBs are masked to 0 after the rotate."]
     #[inline(always)]
-    #[must_use]
     pub fn l2_nbits(&mut self) -> L2_NBITS_W<TMDS_CTRL_SPEC> {
         L2_NBITS_W::new(self, 18)
     }
     #[doc = "Bit 23 - Enable lane interleaving for reads of PEEK_SINGLE/POP_SINGLE. When interleaving is disabled, each of the 3 symbols appears as a contiguous 10-bit field, with lane 0 being the least-significant and starting at bit 0 of the register. When interleaving is enabled, the symbols are packed into 5 chunks of 3 lanes times 2 bits (30 bits total). Each chunk contains two bits of a TMDS symbol per lane, with lane 0 being the least significant."]
     #[inline(always)]
-    #[must_use]
     pub fn interleave(&mut self) -> INTERLEAVE_W<TMDS_CTRL_SPEC> {
         INTERLEAVE_W::new(self, 23)
     }
     #[doc = "Bits 24:26 - Shift applied to the colour data register with each read of a POP alias register. Reading from the POP_SINGLE register, or reading from the POP_DOUBLE register with PIX2_NOSHIFT set (for pixel doubling), shifts by the indicated amount. Reading from a POP_DOUBLE register when PIX2_NOSHIFT is clear will shift by double the indicated amount. (Shift by 32 means no shift.)"]
     #[inline(always)]
-    #[must_use]
     pub fn pix_shift(&mut self) -> PIX_SHIFT_W<TMDS_CTRL_SPEC> {
         PIX_SHIFT_W::new(self, 24)
     }
     #[doc = "Bit 27 - When encoding two pixels's worth of symbols in one cycle (a read of a PEEK/POP_DOUBLE register), the second encoder sees a shifted version of the colour data register. This control disables that shift, so that both encoder layers see the same pixel data. This is used for pixel doubling."]
     #[inline(always)]
-    #[must_use]
     pub fn pix2_noshift(&mut self) -> PIX2_NOSHIFT_W<TMDS_CTRL_SPEC> {
         PIX2_NOSHIFT_W::new(self, 27)
     }
     #[doc = "Bit 28 - Clear the running DC balance state of the TMDS encoders. This bit should be written once at the beginning of each scanline."]
     #[inline(always)]
-    #[must_use]
     pub fn clear_balance(&mut self) -> CLEAR_BALANCE_W<TMDS_CTRL_SPEC> {
         CLEAR_BALANCE_W::new(self, 28)
     }

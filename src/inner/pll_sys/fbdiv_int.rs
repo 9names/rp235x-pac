@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:11 - see ctrl reg description for constraints"]
     #[inline(always)]
-    #[must_use]
     pub fn fbdiv_int(&mut self) -> FBDIV_INT_W<FBDIV_INT_SPEC> {
         FBDIV_INT_W::new(self, 0)
     }

@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn vreg_output_low(&mut self) -> VREG_OUTPUT_LOW_W<INTF_SPEC> {
         VREG_OUTPUT_LOW_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn timer(&mut self) -> TIMER_W<INTF_SPEC> {
         TIMER_W::new(self, 1)
     }
     #[doc = "Bit 2 - Source is state.req_ignored"]
     #[inline(always)]
-    #[must_use]
     pub fn state_req_ignored(&mut self) -> STATE_REQ_IGNORED_W<INTF_SPEC> {
         STATE_REQ_IGNORED_W::new(self, 2)
     }
     #[doc = "Bit 3 - Source is state.pwrup_while_waiting"]
     #[inline(always)]
-    #[must_use]
     pub fn pwrup_while_waiting(&mut self) -> PWRUP_WHILE_WAITING_W<INTF_SPEC> {
         PWRUP_WHILE_WAITING_W::new(self, 3)
     }

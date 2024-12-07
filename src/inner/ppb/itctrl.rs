@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Integration Mode Enable"]
     #[inline(always)]
-    #[must_use]
     pub fn ime(&mut self) -> IME_W<ITCTRL_SPEC> {
         IME_W::new(self, 0)
     }

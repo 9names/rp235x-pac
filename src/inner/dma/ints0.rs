@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Indicates active channel interrupt requests which are currently causing IRQ 0 to be asserted. Channel interrupts can be cleared by writing a bit mask here. Channels with a security/privilege (SECCFG_CHx) greater SECCFG_IRQ0) read as 0 in this register, and ignore writes."]
     #[inline(always)]
-    #[must_use]
     pub fn ints0(&mut self) -> INTS0_W<INTS0_SPEC> {
         INTS0_W::new(self, 0)
     }

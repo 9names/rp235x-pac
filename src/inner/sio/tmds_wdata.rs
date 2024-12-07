@@ -7,7 +7,6 @@ pub type TMDS_WDATA_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn tmds_wdata(&mut self) -> TMDS_WDATA_W<TMDS_WDATA_SPEC> {
         TMDS_WDATA_W::new(self, 0)
     }

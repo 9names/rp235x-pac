@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - When a write to one of these bits occurs, with the value:"]
     #[inline(always)]
-    #[must_use]
     pub fn set0(&mut self) -> SET0_W<TRCCLAIMSET_SPEC> {
         SET0_W::new(self, 0)
     }
     #[doc = "Bit 1 - When a write to one of these bits occurs, with the value:"]
     #[inline(always)]
-    #[must_use]
     pub fn set1(&mut self) -> SET1_W<TRCCLAIMSET_SPEC> {
         SET1_W::new(self, 1)
     }
     #[doc = "Bit 2 - When a write to one of these bits occurs, with the value:"]
     #[inline(always)]
-    #[must_use]
     pub fn set2(&mut self) -> SET2_W<TRCCLAIMSET_SPEC> {
         SET2_W::new(self, 2)
     }
     #[doc = "Bit 3 - When a write to one of these bits occurs, with the value:"]
     #[inline(always)]
-    #[must_use]
     pub fn set3(&mut self) -> SET3_W<TRCCLAIMSET_SPEC> {
         SET3_W::new(self, 3)
     }

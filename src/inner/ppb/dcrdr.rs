@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Provides debug access for reading and writing the general-purpose registers, special-purpose registers, and Floating-point Extension registers"]
     #[inline(always)]
-    #[must_use]
     pub fn dbgtmp(&mut self) -> DBGTMP_W<DCRDR_SPEC> {
         DBGTMP_W::new(self, 0)
     }

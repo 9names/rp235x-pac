@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 5:31 - Holds bits \\[31:5\\]
 of the base address for the selected SAU region"]
     #[inline(always)]
-    #[must_use]
     pub fn baddr(&mut self) -> BADDR_W<SAU_RBAR_SPEC> {
         BADDR_W::new(self, 5)
     }

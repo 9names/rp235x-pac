@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable controller"]
     #[inline(always)]
-    #[must_use]
     pub fn controller_en(&mut self) -> CONTROLLER_EN_W<MAIN_CTRL_SPEC> {
         CONTROLLER_EN_W::new(self, 0)
     }
     #[doc = "Bit 1 - Device mode = 0, Host mode = 1"]
     #[inline(always)]
-    #[must_use]
     pub fn host_ndevice(&mut self) -> HOST_NDEVICE_W<MAIN_CTRL_SPEC> {
         HOST_NDEVICE_W::new(self, 1)
     }
     #[doc = "Bit 2 - Isolates USB phy after controller power-up Remove isolation once software has configured the controller Not isolated = 0, Isolated = 1"]
     #[inline(always)]
-    #[must_use]
     pub fn phy_iso(&mut self) -> PHY_ISO_W<MAIN_CTRL_SPEC> {
         PHY_ISO_W::new(self, 2)
     }
     #[doc = "Bit 31 - Reduced timings for simulation"]
     #[inline(always)]
-    #[must_use]
     pub fn sim_timing(&mut self) -> SIM_TIMING_W<MAIN_CTRL_SPEC> {
         SIM_TIMING_W::new(self, 31)
     }

@@ -32,13 +32,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - By default, any processor sleep will deassert the system-level clock request. Reenabling the clocks incurs 5 cycles of additional latency on wakeup. Setting LIGHT_SLEEP to 1 keeps the clock request asserted during a normal sleep (Arm SCR.SLEEPDEEP = 0), for faster wakeup. Processor deep sleep (Arm SCR.SLEEPDEEP = 1) is not affected, and will always deassert the system-level clock request."]
     #[inline(always)]
-    #[must_use]
     pub fn light_sleep(&mut self) -> LIGHT_SLEEP_W<SLEEPCTRL_SPEC> {
         LIGHT_SLEEP_W::new(self, 0)
     }
     #[doc = "Bit 1 - Request that the next processor deep sleep is a WIC sleep. After setting this bit, before sleeping, poll WICENACK to ensure the processor interrupt controller has acknowledged the change."]
     #[inline(always)]
-    #[must_use]
     pub fn wicenreq(&mut self) -> WICENREQ_W<SLEEPCTRL_SPEC> {
         WICENREQ_W::new(self, 1)
     }

@@ -9,7 +9,7 @@ Value on reset: 0"]
 pub enum VOLTAGE_SELECT_A {
     #[doc = "0: Set voltage to 3.3V (DVDD >= 2V5)"]
     _3V3 = 0,
-    #[doc = "1: Set voltage to 1.8V (DVDD &lt;= 1V8)"]
+    #[doc = "1: Set voltage to 1.8V (DVDD <= 1V8)"]
     _1V8 = 1,
 }
 impl From<VOLTAGE_SELECT_A> for bool {
@@ -34,7 +34,7 @@ impl VOLTAGE_SELECT_R {
     pub fn is_3v3(&self) -> bool {
         *self == VOLTAGE_SELECT_A::_3V3
     }
-    #[doc = "Set voltage to 1.8V (DVDD &lt;= 1V8)"]
+    #[doc = "Set voltage to 1.8V (DVDD <= 1V8)"]
     #[inline(always)]
     pub fn is_1v8(&self) -> bool {
         *self == VOLTAGE_SELECT_A::_1V8
@@ -51,7 +51,7 @@ where
     pub fn _3v3(self) -> &'a mut crate::W<REG> {
         self.variant(VOLTAGE_SELECT_A::_3V3)
     }
-    #[doc = "Set voltage to 1.8V (DVDD &lt;= 1V8)"]
+    #[doc = "Set voltage to 1.8V (DVDD <= 1V8)"]
     #[inline(always)]
     pub fn _1v8(self) -> &'a mut crate::W<REG> {
         self.variant(VOLTAGE_SELECT_A::_1V8)
@@ -67,7 +67,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn voltage_select(&mut self) -> VOLTAGE_SELECT_W<VOLTAGE_SELECT_SPEC> {
         VOLTAGE_SELECT_W::new(self, 0)
     }

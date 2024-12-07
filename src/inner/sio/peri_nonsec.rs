@@ -34,19 +34,16 @@ impl R {
 impl W {
     #[doc = "Bit 0 - If 1, detach interpolator 0 (of this core) from the Secure SIO, and attach to the Non-secure SIO."]
     #[inline(always)]
-    #[must_use]
     pub fn interp0(&mut self) -> INTERP0_W<PERI_NONSEC_SPEC> {
         INTERP0_W::new(self, 0)
     }
     #[doc = "Bit 1 - If 1, detach interpolator 1 (of this core) from the Secure SIO, and attach to the Non-secure SIO."]
     #[inline(always)]
-    #[must_use]
     pub fn interp1(&mut self) -> INTERP1_W<PERI_NONSEC_SPEC> {
         INTERP1_W::new(self, 1)
     }
     #[doc = "Bit 5 - IF 1, detach TMDS encoder (of this core) from the Secure SIO, and attach to the Non-secure SIO."]
     #[inline(always)]
-    #[must_use]
     pub fn tmds(&mut self) -> TMDS_W<PERI_NONSEC_SPEC> {
         TMDS_W::new(self, 5)
     }

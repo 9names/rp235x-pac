@@ -7,7 +7,6 @@ pub type LOAD_W<'a, REG> = crate::FieldWriter<'a, REG, 24, u32>;
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    #[must_use]
     pub fn load(&mut self) -> LOAD_W<LOAD_SPEC> {
         LOAD_W::new(self, 0)
     }

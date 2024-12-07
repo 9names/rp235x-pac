@@ -787,79 +787,66 @@ impl R {
 impl W {
     #[doc = "Bit 0 - This bit masks the R_RX_UNDER interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_rx_under(&mut self) -> M_RX_UNDER_W<IC_INTR_MASK_SPEC> {
         M_RX_UNDER_W::new(self, 0)
     }
     #[doc = "Bit 1 - This bit masks the R_RX_OVER interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_rx_over(&mut self) -> M_RX_OVER_W<IC_INTR_MASK_SPEC> {
         M_RX_OVER_W::new(self, 1)
     }
     #[doc = "Bit 2 - This bit masks the R_RX_FULL interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_rx_full(&mut self) -> M_RX_FULL_W<IC_INTR_MASK_SPEC> {
         M_RX_FULL_W::new(self, 2)
     }
     #[doc = "Bit 3 - This bit masks the R_TX_OVER interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_tx_over(&mut self) -> M_TX_OVER_W<IC_INTR_MASK_SPEC> {
         M_TX_OVER_W::new(self, 3)
     }
     #[doc = "Bit 4 - This bit masks the R_TX_EMPTY interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_tx_empty(&mut self) -> M_TX_EMPTY_W<IC_INTR_MASK_SPEC> {
         M_TX_EMPTY_W::new(self, 4)
     }
     #[doc = "Bit 5 - This bit masks the R_RD_REQ interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_rd_req(&mut self) -> M_RD_REQ_W<IC_INTR_MASK_SPEC> {
         M_RD_REQ_W::new(self, 5)
     }
     #[doc = "Bit 6 - This bit masks the R_TX_ABRT interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_tx_abrt(&mut self) -> M_TX_ABRT_W<IC_INTR_MASK_SPEC> {
         M_TX_ABRT_W::new(self, 6)
     }
     #[doc = "Bit 7 - This bit masks the R_RX_DONE interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_rx_done(&mut self) -> M_RX_DONE_W<IC_INTR_MASK_SPEC> {
         M_RX_DONE_W::new(self, 7)
     }
     #[doc = "Bit 8 - This bit masks the R_ACTIVITY interrupt in IC_INTR_STAT register. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn m_activity(&mut self) -> M_ACTIVITY_W<IC_INTR_MASK_SPEC> {
         M_ACTIVITY_W::new(self, 8)
     }
     #[doc = "Bit 9 - This bit masks the R_STOP_DET interrupt in IC_INTR_STAT register. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn m_stop_det(&mut self) -> M_STOP_DET_W<IC_INTR_MASK_SPEC> {
         M_STOP_DET_W::new(self, 9)
     }
     #[doc = "Bit 10 - This bit masks the R_START_DET interrupt in IC_INTR_STAT register. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn m_start_det(&mut self) -> M_START_DET_W<IC_INTR_MASK_SPEC> {
         M_START_DET_W::new(self, 10)
     }
     #[doc = "Bit 11 - This bit masks the R_GEN_CALL interrupt in IC_INTR_STAT register. Reset value: 0x1"]
     #[inline(always)]
-    #[must_use]
     pub fn m_gen_call(&mut self) -> M_GEN_CALL_W<IC_INTR_MASK_SPEC> {
         M_GEN_CALL_W::new(self, 11)
     }
     #[doc = "Bit 12 - This bit masks the R_RESTART_DET interrupt in IC_INTR_STAT register. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn m_restart_det(&mut self) -> M_RESTART_DET_W<IC_INTR_MASK_SPEC> {
         M_RESTART_DET_W::new(self, 12)
     }

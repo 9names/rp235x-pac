@@ -167,13 +167,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:11 - Controls the number of delay stages in the ROSC ring LOW uses stages 0 to 7 MEDIUM uses stages 2 to 7 HIGH uses stages 4 to 7 TOOHIGH uses stages 6 to 7 and should not be used because its frequency exceeds design specifications The clock output will not glitch when changing the range up one step at a time The clock output will glitch when changing the range down Note: the values here are gray coded which is why HIGH comes before TOOHIGH"]
     #[inline(always)]
-    #[must_use]
     pub fn freq_range(&mut self) -> FREQ_RANGE_W<CTRL_SPEC> {
         FREQ_RANGE_W::new(self, 0)
     }
     #[doc = "Bits 12:23 - On power-up this field is initialised to ENABLE The system clock must be switched to another source before setting this field to DISABLE otherwise the chip will lock up The 12-bit code is intended to give some protection against accidental writes. An invalid setting will enable the oscillator."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<CTRL_SPEC> {
         ENABLE_W::new(self, 12)
     }

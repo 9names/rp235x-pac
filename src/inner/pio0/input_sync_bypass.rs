@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn input_sync_bypass(&mut self) -> INPUT_SYNC_BYPASS_W<INPUT_SYNC_BYPASS_SPEC> {
         INPUT_SYNC_BYPASS_W::new(self, 0)
     }

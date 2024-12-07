@@ -37,20 +37,17 @@ of the upper inclusive limit of the selected MPU memory region. This value is po
 impl W {
     #[doc = "Bit 0 - Region enable"]
     #[inline(always)]
-    #[must_use]
     pub fn en(&mut self) -> EN_W<MPU_RLAR_A1_SPEC> {
         EN_W::new(self, 0)
     }
     #[doc = "Bits 1:3 - Associates a set of attributes in the MPU_MAIR0 and MPU_MAIR1 fields"]
     #[inline(always)]
-    #[must_use]
     pub fn attrindx(&mut self) -> ATTRINDX_W<MPU_RLAR_A1_SPEC> {
         ATTRINDX_W::new(self, 1)
     }
     #[doc = "Bits 5:31 - Contains bits \\[31:5\\]
 of the upper inclusive limit of the selected MPU memory region. This value is postfixed with 0x1F to provide the limit address to be checked against"]
     #[inline(always)]
-    #[must_use]
     pub fn limit(&mut self) -> LIMIT_W<MPU_RLAR_A1_SPEC> {
         LIMIT_W::new(self, 5)
     }

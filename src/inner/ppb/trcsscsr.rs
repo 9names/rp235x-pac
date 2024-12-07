@@ -44,7 +44,6 @@ impl R {
 impl W {
     #[doc = "Bit 31 - Single-shot status bit. Indicates if any of the comparators, that TRCSSCCRn.SAC or TRCSSCCRn.ARC selects, have matched"]
     #[inline(always)]
-    #[must_use]
     pub fn status(&mut self) -> STATUS_W<TRCSSCSR_SPEC> {
         STATUS_W::new(self, 31)
     }

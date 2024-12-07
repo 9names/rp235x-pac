@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Receive Data Level. This bit field controls the level at which a DMA request is made by the receive logic. The watermark level = DMARDL+1; that is, dma_rx_req is generated when the number of valid data entries in the receive FIFO is equal to or more than this field value + 1, and RDMAE =1. For instance, when DMARDL is 0, then dma_rx_req is asserted when 1 or more data entries are present in the receive FIFO. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn dmardl(&mut self) -> DMARDL_W<IC_DMA_RDLR_SPEC> {
         DMARDL_W::new(self, 0)
     }

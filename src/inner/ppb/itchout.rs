@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Sets the value of the ctichout outputs"]
     #[inline(always)]
-    #[must_use]
     pub fn ctchout(&mut self) -> CTCHOUT_W<ITCHOUT_SPEC> {
         CTCHOUT_W::new(self, 0)
     }

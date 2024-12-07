@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:11 - Instruction trace cycle count threshold"]
     #[inline(always)]
-    #[must_use]
     pub fn threshold(&mut self) -> THRESHOLD_W<TRCCCCTLR_SPEC> {
         THRESHOLD_W::new(self, 0)
     }

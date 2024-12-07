@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn lock_n_sticky(&mut self) -> LOCK_N_STICKY_W<INTE_SPEC> {
         LOCK_N_STICKY_W::new(self, 0)
     }

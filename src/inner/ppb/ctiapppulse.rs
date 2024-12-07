@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Setting a bit HIGH generates a channel event pulse for the selected channel. There is one bit of the register for each channel."]
     #[inline(always)]
-    #[must_use]
     pub fn appulse(&mut self) -> APPULSE_W<CTIAPPPULSE_SPEC> {
         APPULSE_W::new(self, 0)
     }

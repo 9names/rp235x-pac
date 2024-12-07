@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Triggered when the sample FIFO reaches a certain level. This level can be programmed via the FCS_THRESH field."]
     #[inline(always)]
-    #[must_use]
     pub fn fifo(&mut self) -> FIFO_W<INTE_SPEC> {
         FIFO_W::new(self, 0)
     }

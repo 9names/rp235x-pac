@@ -18,7 +18,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Transmit/Receive FIFO: Read Receive FIFO. Write Transmit FIFO. You must right-justify data when the PrimeCell SSP is programmed for a data size that is less than 16 bits. Unused bits at the top are ignored by transmit logic. The receive logic automatically right-justifies."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DATA_W<SSPDR_SPEC> {
         DATA_W::new(self, 0)
     }

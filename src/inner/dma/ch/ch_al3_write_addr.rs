@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn ch0_al3_write_addr(&mut self) -> CH0_AL3_WRITE_ADDR_W<CH_AL3_WRITE_ADDR_SPEC> {
         CH0_AL3_WRITE_ADDR_W::new(self, 0)
     }

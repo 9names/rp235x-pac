@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Sets the corresponding bits in the CTIAPPSET to 0. There is one bit of the register for each channel."]
     #[inline(always)]
-    #[must_use]
     pub fn appclear(&mut self) -> APPCLEAR_W<CTIAPPCLEAR_SPEC> {
         APPCLEAR_W::new(self, 0)
     }

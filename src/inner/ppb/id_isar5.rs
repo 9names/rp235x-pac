@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn id_isar5(&mut self) -> ID_ISAR5_W<ID_ISAR5_SPEC> {
         ID_ISAR5_W::new(self, 0)
     }

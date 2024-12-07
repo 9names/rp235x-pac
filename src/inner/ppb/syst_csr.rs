@@ -41,19 +41,16 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable SysTick counter: 0 = Counter disabled. 1 = Counter enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<SYST_CSR_SPEC> {
         ENABLE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Enables SysTick exception request: 0 = Counting down to zero does not assert the SysTick exception request. 1 = Counting down to zero to asserts the SysTick exception request."]
     #[inline(always)]
-    #[must_use]
     pub fn tickint(&mut self) -> TICKINT_W<SYST_CSR_SPEC> {
         TICKINT_W::new(self, 1)
     }
     #[doc = "Bit 2 - SysTick clock source. Always reads as one if SYST_CALIB reports NOREF. Selects the SysTick timer clock source: 0 = External reference clock. 1 = Processor clock."]
     #[inline(always)]
-    #[must_use]
     pub fn clksource(&mut self) -> CLKSOURCE_W<SYST_CSR_SPEC> {
         CLKSOURCE_W::new(self, 2)
     }

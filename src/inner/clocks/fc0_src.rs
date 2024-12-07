@@ -269,7 +269,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_src(&mut self) -> FC0_SRC_W<FC0_SRC_SPEC> {
         FC0_SRC_W::new(self, 0)
     }

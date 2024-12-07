@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Ignore pwrup req from debugger. If pwrup req is asserted then this will prevent power down and set powerdown blocked. Set ignore to stop paying attention to pwrup_req"]
     #[inline(always)]
-    #[must_use]
     pub fn ignore(&mut self) -> IGNORE_W<DBG_PWRCFG_SPEC> {
         IGNORE_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Write any nonzero value to disable writes to ARM, DISARM, SENSITIVITY and LOCK. This register is Secure read/write only."]
     #[inline(always)]
-    #[must_use]
     pub fn lock(&mut self) -> LOCK_W<LOCK_SPEC> {
         LOCK_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Transmit Data Level. This bit field controls the level at which a DMA request is made by the transmit logic. It is equal to the watermark level; that is, the dma_tx_req signal is generated when the number of valid data entries in the transmit FIFO is equal to or below this field value, and TDMAE = 1. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn dmatdl(&mut self) -> DMATDL_W<IC_DMA_TDLR_SPEC> {
         DMATDL_W::new(self, 0)
     }

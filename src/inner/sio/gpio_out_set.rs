@@ -7,7 +7,6 @@ pub type GPIO_OUT_SET_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31 - Perform an atomic bit-set on GPIO_OUT, i.e. `GPIO_OUT |= wdata`"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_out_set(&mut self) -> GPIO_OUT_SET_W<GPIO_OUT_SET_SPEC> {
         GPIO_OUT_SET_W::new(self, 0)
     }

@@ -37,20 +37,17 @@ of the limit address for the selected SAU region"]
 impl W {
     #[doc = "Bit 0 - SAU region enable"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<SAU_RLAR_SPEC> {
         ENABLE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Controls whether Non-secure state is permitted to execute an SG instruction from this region"]
     #[inline(always)]
-    #[must_use]
     pub fn nsc(&mut self) -> NSC_W<SAU_RLAR_SPEC> {
         NSC_W::new(self, 1)
     }
     #[doc = "Bits 5:31 - Holds bits \\[31:5\\]
 of the limit address for the selected SAU region"]
     #[inline(always)]
-    #[must_use]
     pub fn laddr(&mut self) -> LADDR_W<SAU_RLAR_SPEC> {
         LADDR_W::new(self, 5)
     }

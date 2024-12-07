@@ -61,37 +61,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GPIO_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         GPIO_W::new(self, 0)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dp(&mut self) -> USB_DP_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         USB_DP_W::new(self, 24)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dm(&mut self) -> USB_DM_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         USB_DM_W::new(self, 25)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sck(&mut self) -> QSPI_SCK_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         QSPI_SCK_W::new(self, 26)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_csn(&mut self) -> QSPI_CSN_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         QSPI_CSN_W::new(self, 27)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sd(&mut self) -> QSPI_SD_W<PROC_IN_SYNC_BYPASS_HI_SPEC> {
         QSPI_SD_W::new(self, 28)
     }

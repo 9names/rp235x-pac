@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:21 - Write a nonzero value to start a streaming read. This will then progress in the background, using flash idle cycles to transfer a linear data block from flash to the streaming FIFO. Decrements automatically (1 at a time) as the stream progresses, and halts on reaching 0. Write 0 to halt an in-progress stream, and discard any in-flight read, so that a new stream can immediately be started (after draining the FIFO and reinitialising STREAM_ADDR)"]
     #[inline(always)]
-    #[must_use]
     pub fn stream_ctr(&mut self) -> STREAM_CTR_W<STREAM_CTR_SPEC> {
         STREAM_CTR_W::new(self, 0)
     }

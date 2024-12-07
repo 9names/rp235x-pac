@@ -74,7 +74,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn arm(&mut self) -> ARM_W<ARM_SPEC> {
         ARM_W::new(self, 0)
     }

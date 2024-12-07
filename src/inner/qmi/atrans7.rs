@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:11 - Physical address base for this virtual address range, in units of 4 kiB (one flash sector). Taking a 24-bit virtual address, firstly bits 23:22 (the two MSBs) are masked to zero, and then BASE is added to bits 23:12 (the upper 12 bits) to form the physical address. Translation wraps on a 16 MiB boundary."]
     #[inline(always)]
-    #[must_use]
     pub fn base(&mut self) -> BASE_W<ATRANS7_SPEC> {
         BASE_W::new(self, 0)
     }
     #[doc = "Bits 16:26 - Translation aperture size for this virtual address range, in units of 4 kiB (one flash sector). Bits 21:12 of the virtual address are compared to SIZE. Offsets greater than SIZE return a bus error, and do not cause a QSPI access."]
     #[inline(always)]
-    #[must_use]
     pub fn size(&mut self) -> SIZE_W<ATRANS7_SPEC> {
         SIZE_W::new(self, 16)
     }

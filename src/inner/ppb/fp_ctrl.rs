@@ -53,13 +53,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enables the FPB"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<FP_CTRL_SPEC> {
         ENABLE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Writes to the FP_CTRL are ignored unless KEY is concurrently written to one"]
     #[inline(always)]
-    #[must_use]
     pub fn key(&mut self) -> KEY_W<FP_CTRL_SPEC> {
         KEY_W::new(self, 1)
     }

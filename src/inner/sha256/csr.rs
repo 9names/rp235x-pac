@@ -121,25 +121,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Write 1 to prepare the SHA-256 core for a new checksum. The SUMx registers are initialised to the proper values (fractional bits of square roots of first 8 primes) and internal counters are cleared. This immediately forces WDATA_RDY and SUM_VLD high. START must be written before initiating a DMA transfer to the SHA-256 core, because the core will always request 16 transfers at a time (1 512-bit block). Additionally, the DMA channel should be configured for a multiple of 16 32-bit transfers."]
     #[inline(always)]
-    #[must_use]
     pub fn start(&mut self) -> START_W<CSR_SPEC> {
         START_W::new(self, 0)
     }
     #[doc = "Bit 4 - Set when a write occurs whilst the SHA-256 core is not ready for data (WDATA_RDY is low). Write one to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn err_wdata_not_rdy(&mut self) -> ERR_WDATA_NOT_RDY_W<CSR_SPEC> {
         ERR_WDATA_NOT_RDY_W::new(self, 4)
     }
     #[doc = "Bits 8:9 - Configure DREQ logic for the correct DMA data size. Must be configured before the DMA channel is triggered. The SHA-256 core's DREQ logic requests one entire block of data at once, since there is no FIFO, and data goes straight into the core's message schedule and digest hardware. Therefore, when transferring data with DMA, CSR_DMA_SIZE must be configured in advance so that the correct number of transfers can be requested per block."]
     #[inline(always)]
-    #[must_use]
     pub fn dma_size(&mut self) -> DMA_SIZE_W<CSR_SPEC> {
         DMA_SIZE_W::new(self, 8)
     }
     #[doc = "Bit 12 - Enable byte swapping of 32-bit values at the point they are committed to the SHA message scheduler. This block's bus interface assembles byte/halfword data into message words in little-endian order, so that DMAing the same buffer with different transfer sizes always gives the same result on a little-endian system like RP2350. However, when marshalling bytes into blocks, SHA expects that the first byte is the *most significant* in each message word. To resolve this, once the bus interface has accumulated 32 bits of data (either a word write, two halfword writes in little-endian order, or four byte writes in little-endian order) the final value can be byte-swapped before passing to the actual SHA core. This feature is enabled by default because using the SHA core to checksum byte buffers is expected to be more common than having preformatted SHA message words lying around."]
     #[inline(always)]
-    #[must_use]
     pub fn bswap(&mut self) -> BSWAP_W<CSR_SPEC> {
         BSWAP_W::new(self, 12)
     }

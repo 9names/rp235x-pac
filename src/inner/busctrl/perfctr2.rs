@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:23 - Busfabric saturating performance counter 2 Count some event signal from the busfabric arbiters, if PERFCTR_EN is set. Write any value to clear. Select an event to count using PERFSEL2"]
     #[inline(always)]
-    #[must_use]
     pub fn perfctr2(&mut self) -> PERFCTR2_W<PERFCTR2_SPEC> {
         PERFCTR2_W::new(self, 0)
     }

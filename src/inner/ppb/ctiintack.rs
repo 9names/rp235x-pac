@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Acknowledges the corresponding ctitrigout output. There is one bit of the register for each ctitrigout output. When a 1 is written to a bit in this register, the corresponding ctitrigout is acknowledged, causing it to be cleared."]
     #[inline(always)]
-    #[must_use]
     pub fn intack(&mut self) -> INTACK_W<CTIINTACK_SPEC> {
         INTACK_W::new(self, 0)
     }

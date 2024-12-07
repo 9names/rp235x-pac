@@ -43,7 +43,7 @@ impl RegisterBlock {
     pub const fn irq0_intf(&self) -> &IRQ0_INTF {
         &self.irq0_intf
     }
-    #[doc = "0x100 - Interrupt status after masking &amp; forcing for irq0"]
+    #[doc = "0x100 - Interrupt status after masking & forcing for irq0"]
     #[inline(always)]
     pub const fn irq0_ints(&self) -> &IRQ0_INTS {
         &self.irq0_ints
@@ -58,7 +58,7 @@ impl RegisterBlock {
     pub const fn irq1_intf(&self) -> &IRQ1_INTF {
         &self.irq1_intf
     }
-    #[doc = "0x10c - Interrupt status after masking &amp; forcing for irq1"]
+    #[doc = "0x10c - Interrupt status after masking & forcing for irq1"]
     #[inline(always)]
     pub const fn irq1_ints(&self) -> &IRQ1_INTS {
         &self.irq1_ints
@@ -105,14 +105,14 @@ module"]
 pub type IRQ0_INTF = crate::Reg<irq0_intf::IRQ0_INTF_SPEC>;
 #[doc = "Interrupt Force for irq0"]
 pub mod irq0_intf;
-#[doc = "IRQ0_INTS (rw) register accessor: Interrupt status after masking &amp; forcing for irq0  
+#[doc = "IRQ0_INTS (rw) register accessor: Interrupt status after masking & forcing for irq0  
 
 You can [`read`](crate::Reg::read) this register and get [`irq0_ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`irq0_ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@irq0_ints`]
 module"]
 pub type IRQ0_INTS = crate::Reg<irq0_ints::IRQ0_INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing for irq0"]
+#[doc = "Interrupt status after masking & forcing for irq0"]
 pub mod irq0_ints;
 #[doc = "IRQ1_INTE (rw) register accessor: Interrupt Enable for irq1  
 
@@ -132,12 +132,12 @@ module"]
 pub type IRQ1_INTF = crate::Reg<irq1_intf::IRQ1_INTF_SPEC>;
 #[doc = "Interrupt Force for irq1"]
 pub mod irq1_intf;
-#[doc = "IRQ1_INTS (rw) register accessor: Interrupt status after masking &amp; forcing for irq1  
+#[doc = "IRQ1_INTS (rw) register accessor: Interrupt status after masking & forcing for irq1  
 
 You can [`read`](crate::Reg::read) this register and get [`irq1_ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`irq1_ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@irq1_ints`]
 module"]
 pub type IRQ1_INTS = crate::Reg<irq1_ints::IRQ1_INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing for irq1"]
+#[doc = "Interrupt status after masking & forcing for irq1"]
 pub mod irq1_ints;

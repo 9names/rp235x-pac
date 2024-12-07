@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - A 32 bit saturating counter that increments upon each XIP access, whether the cache is hit or not. This includes noncacheable accesses. Write any value to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn ctr_acc(&mut self) -> CTR_ACC_W<CTR_ACC_SPEC> {
         CTR_ACC_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:23 - Value to load into the SysTick Current Value Register when the counter reaches 0."]
     #[inline(always)]
-    #[must_use]
     pub fn reload(&mut self) -> RELOAD_W<SYST_RVR_SPEC> {
         RELOAD_W::new(self, 0)
     }

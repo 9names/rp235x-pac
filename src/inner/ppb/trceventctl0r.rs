@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Selects the resource number, based on the value of TYPE0: When TYPE1 is 0, selects a single selected resource from 0-15 defined by SEL0\\[2:0\\]. When TYPE1 is 1, selects a Boolean combined resource pair from 0-7 defined by SEL0\\[2:0\\]"]
     #[inline(always)]
-    #[must_use]
     pub fn sel0(&mut self) -> SEL0_W<TRCEVENTCTL0R_SPEC> {
         SEL0_W::new(self, 0)
     }
     #[doc = "Bit 7 - Selects the resource type for event 0"]
     #[inline(always)]
-    #[must_use]
     pub fn type0(&mut self) -> TYPE0_W<TRCEVENTCTL0R_SPEC> {
         TYPE0_W::new(self, 7)
     }
     #[doc = "Bits 8:10 - Selects the resource number, based on the value of TYPE1: When TYPE1 is 0, selects a single selected resource from 0-15 defined by SEL1\\[2:0\\]. When TYPE1 is 1, selects a Boolean combined resource pair from 0-7 defined by SEL1\\[2:0\\]"]
     #[inline(always)]
-    #[must_use]
     pub fn sel1(&mut self) -> SEL1_W<TRCEVENTCTL0R_SPEC> {
         SEL1_W::new(self, 8)
     }
     #[doc = "Bit 15 - Selects the resource type for event 1"]
     #[inline(always)]
-    #[must_use]
     pub fn type1(&mut self) -> TYPE1_W<TRCEVENTCTL0R_SPEC> {
         TYPE1_W::new(self, 15)
     }

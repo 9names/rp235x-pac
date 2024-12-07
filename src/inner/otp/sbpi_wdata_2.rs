@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn sbpi_wdata_2(&mut self) -> SBPI_WDATA_2_W<SBPI_WDATA_2_SPEC> {
         SBPI_WDATA_2_W::new(self, 0)
     }

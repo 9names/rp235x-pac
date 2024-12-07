@@ -127,13 +127,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Select architecture for core 0."]
     #[inline(always)]
-    #[must_use]
     pub fn core0(&mut self) -> CORE0_W<ARCHSEL_SPEC> {
         CORE0_W::new(self, 0)
     }
     #[doc = "Bit 1 - Select architecture for core 1."]
     #[inline(always)]
-    #[must_use]
     pub fn core1(&mut self) -> CORE1_W<ARCHSEL_SPEC> {
         CORE1_W::new(self, 1)
     }

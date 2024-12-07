@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 4"]
     #[inline(always)]
-    #[must_use]
     pub fn gpiobase(&mut self) -> GPIOBASE_W<GPIOBASE_SPEC> {
         GPIOBASE_W::new(self, 4)
     }

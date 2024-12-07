@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Sets the number of rng_clk cycles between two consecutive ring oscillator samples. Note! If the Von-Neuman is bypassed, the minimum value for sample counter must not be less then decimal seventeen"]
     #[inline(always)]
-    #[must_use]
     pub fn sample_cntr1(&mut self) -> SAMPLE_CNTR1_W<SAMPLE_CNT1_SPEC> {
         SAMPLE_CNTR1_W::new(self, 0)
     }

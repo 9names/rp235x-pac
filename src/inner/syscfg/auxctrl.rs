@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - * Bits 7:2: Reserved * Bit 1: When clear, the LPOSC output is XORed into the TRNG ROSC output as an additional, uncorrelated entropy source. When set, this behaviour is disabled. * Bit 0: Force POWMAN clock to switch to LPOSC, by asserting its WDRESET input. This must be set before initiating a watchdog reset of the RSM from a stage that includes CLOCKS, if POWMAN is running from clk_ref at the point that the watchdog reset takes place. Otherwise, the short pulse generated on clk_ref by the reset of the CLOCKS block may affect POWMAN register state."]
     #[inline(always)]
-    #[must_use]
     pub fn auxctrl(&mut self) -> AUXCTRL_W<AUXCTRL_SPEC> {
         AUXCTRL_W::new(self, 0)
     }

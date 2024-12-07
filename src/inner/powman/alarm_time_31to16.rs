@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - This field must only be written when POWMAN_ALARM_ENAB=0"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm_time_31to16(&mut self) -> ALARM_TIME_31TO16_W<ALARM_TIME_31TO16_SPEC> {
         ALARM_TIME_31TO16_W::new(self, 0)
     }

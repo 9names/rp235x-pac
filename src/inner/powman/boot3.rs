@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn boot3(&mut self) -> BOOT3_W<BOOT3_SPEC> {
         BOOT3_W::new(self, 0)
     }

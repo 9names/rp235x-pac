@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For ITNS\\[m\\]
 in NVIC_ITNS*n, `IAAMO the target Security state for interrupt 32*n+m"]
     #[inline(always)]
-    #[must_use]
     pub fn itns(&mut self) -> ITNS_W<NVIC_ITNS1_SPEC> {
         ITNS_W::new(self, 0)
     }

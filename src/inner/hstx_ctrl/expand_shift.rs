@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:4 - How many bits to right-rotate the shift register by each time data is pushed to the output shifter, when the current command is a raw data command."]
     #[inline(always)]
-    #[must_use]
     pub fn raw_shift(&mut self) -> RAW_SHIFT_W<EXPAND_SHIFT_SPEC> {
         RAW_SHIFT_W::new(self, 0)
     }
     #[doc = "Bits 8:12 - Number of times to consume from the shift register before refilling it from the FIFO, when the current command is a raw data command. A register value of 0 means shift 32 times."]
     #[inline(always)]
-    #[must_use]
     pub fn raw_n_shifts(&mut self) -> RAW_N_SHIFTS_W<EXPAND_SHIFT_SPEC> {
         RAW_N_SHIFTS_W::new(self, 8)
     }
     #[doc = "Bits 16:20 - How many bits to right-rotate the shift register by each time data is pushed to the output shifter, when the current command is an encoded data command (e.g. TMDS)."]
     #[inline(always)]
-    #[must_use]
     pub fn enc_shift(&mut self) -> ENC_SHIFT_W<EXPAND_SHIFT_SPEC> {
         ENC_SHIFT_W::new(self, 16)
     }
     #[doc = "Bits 24:28 - Number of times to consume from the shift register before refilling it from the FIFO, when the current command is an encoded data command (e.g. TMDS). A register value of 0 means shift 32 times."]
     #[inline(always)]
-    #[must_use]
     pub fn enc_n_shifts(&mut self) -> ENC_N_SHIFTS_W<EXPAND_SHIFT_SPEC> {
         ENC_N_SHIFTS_W::new(self, 24)
     }

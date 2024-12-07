@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Sets the required SDA hold time in units of ic_clk period, when DW_apb_i2c acts as a transmitter. Reset value: IC_DEFAULT_SDA_HOLD\\[15:0\\]."]
     #[inline(always)]
-    #[must_use]
     pub fn ic_sda_tx_hold(&mut self) -> IC_SDA_TX_HOLD_W<IC_SDA_HOLD_SPEC> {
         IC_SDA_TX_HOLD_W::new(self, 0)
     }
     #[doc = "Bits 16:23 - Sets the required SDA hold time in units of ic_clk period, when DW_apb_i2c acts as a receiver. Reset value: IC_DEFAULT_SDA_HOLD\\[23:16\\]."]
     #[inline(always)]
-    #[must_use]
     pub fn ic_sda_rx_hold(&mut self) -> IC_SDA_RX_HOLD_W<IC_SDA_HOLD_SPEC> {
         IC_SDA_RX_HOLD_W::new(self, 16)
     }

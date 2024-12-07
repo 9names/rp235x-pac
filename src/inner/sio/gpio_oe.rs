@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Set output enable (1/0 -> output/input) for GPIO0...31. Reading back gives the last value written. If core 0 and core 1 both write to GPIO_OE simultaneously (or to a SET/CLR/XOR alias), the result is as though the write from core 0 took place first, and the write from core 1 was then applied to that intermediate result. In the Non-secure SIO, Secure-only GPIOs (as per ACCESSCTRL) ignore writes, and their output status reads back as zero. This is also true for SET/CLR/XOR aliases of this register."]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_oe(&mut self) -> GPIO_OE_W<GPIO_OE_SPEC> {
         GPIO_OE_W::new(self, 0)
     }

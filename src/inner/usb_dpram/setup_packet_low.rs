@@ -34,19 +34,16 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn bmrequesttype(&mut self) -> BMREQUESTTYPE_W<SETUP_PACKET_LOW_SPEC> {
         BMREQUESTTYPE_W::new(self, 0)
     }
     #[doc = "Bits 8:15"]
     #[inline(always)]
-    #[must_use]
     pub fn brequest(&mut self) -> BREQUEST_W<SETUP_PACKET_LOW_SPEC> {
         BREQUEST_W::new(self, 8)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    #[must_use]
     pub fn wvalue(&mut self) -> WVALUE_W<SETUP_PACKET_LOW_SPEC> {
         WVALUE_W::new(self, 16)
     }

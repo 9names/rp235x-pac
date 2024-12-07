@@ -7,7 +7,6 @@ pub type GPIO_OE_SET_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31 - Perform an atomic bit-set on GPIO_OE, i.e. `GPIO_OE |= wdata`"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_oe_set(&mut self) -> GPIO_OE_SET_W<GPIO_OE_SET_SPEC> {
         GPIO_OE_SET_W::new(self, 0)
     }

@@ -41,19 +41,16 @@ impl R {
 impl W {
     #[doc = "Bits 5:7 - Priority of system handler 12, SecureFault"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_12_3(&mut self) -> PRI_12_3_W<SHPR3_SPEC> {
         PRI_12_3_W::new(self, 5)
     }
     #[doc = "Bits 21:23 - Priority of system handler 14, SecureFault"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_14_3(&mut self) -> PRI_14_3_W<SHPR3_SPEC> {
         PRI_14_3_W::new(self, 21)
     }
     #[doc = "Bits 29:31 - Priority of system handler 15, SecureFault"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_15_3(&mut self) -> PRI_15_3_W<SHPR3_SPEC> {
         PRI_15_3_W::new(self, 29)
     }

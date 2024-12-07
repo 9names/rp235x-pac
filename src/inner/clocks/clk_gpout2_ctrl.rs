@@ -295,37 +295,31 @@ impl R {
 impl W {
     #[doc = "Bits 5:8 - Selects the auxiliary clock source, will glitch when switching"]
     #[inline(always)]
-    #[must_use]
     pub fn auxsrc(&mut self) -> AUXSRC_W<CLK_GPOUT2_CTRL_SPEC> {
         AUXSRC_W::new(self, 5)
     }
     #[doc = "Bit 10 - Asynchronously kills the clock generator, enable must be set low before deasserting kill"]
     #[inline(always)]
-    #[must_use]
     pub fn kill(&mut self) -> KILL_W<CLK_GPOUT2_CTRL_SPEC> {
         KILL_W::new(self, 10)
     }
     #[doc = "Bit 11 - Starts and stops the clock generator cleanly"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<CLK_GPOUT2_CTRL_SPEC> {
         ENABLE_W::new(self, 11)
     }
     #[doc = "Bit 12 - Enables duty cycle correction for odd divisors, can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn dc50(&mut self) -> DC50_W<CLK_GPOUT2_CTRL_SPEC> {
         DC50_W::new(self, 12)
     }
     #[doc = "Bits 16:17 - This delays the enable signal by up to 3 cycles of the input clock This must be set before the clock is enabled to have any effect"]
     #[inline(always)]
-    #[must_use]
     pub fn phase(&mut self) -> PHASE_W<CLK_GPOUT2_CTRL_SPEC> {
         PHASE_W::new(self, 16)
     }
     #[doc = "Bit 20 - An edge on this signal shifts the phase of the output by 1 cycle of the input clock This can be done at any time"]
     #[inline(always)]
-    #[must_use]
     pub fn nudge(&mut self) -> NUDGE_W<CLK_GPOUT2_CTRL_SPEC> {
         NUDGE_W::new(self, 20)
     }

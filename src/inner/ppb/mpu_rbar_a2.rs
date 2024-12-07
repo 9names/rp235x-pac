@@ -46,26 +46,22 @@ of the lower inclusive limit of the selected MPU memory region. This value is ze
 impl W {
     #[doc = "Bit 0 - Defines whether code can be executed from this region"]
     #[inline(always)]
-    #[must_use]
     pub fn xn(&mut self) -> XN_W<MPU_RBAR_A2_SPEC> {
         XN_W::new(self, 0)
     }
     #[doc = "Bits 1:2 - Defines the access permissions for this region"]
     #[inline(always)]
-    #[must_use]
     pub fn ap(&mut self) -> AP_W<MPU_RBAR_A2_SPEC> {
         AP_W::new(self, 1)
     }
     #[doc = "Bits 3:4 - Defines the Shareability domain of this region for Normal memory"]
     #[inline(always)]
-    #[must_use]
     pub fn sh(&mut self) -> SH_W<MPU_RBAR_A2_SPEC> {
         SH_W::new(self, 3)
     }
     #[doc = "Bits 5:31 - Contains bits \\[31:5\\]
 of the lower inclusive limit of the selected MPU memory region. This value is zero extended to provide the base address to be checked against"]
     #[inline(always)]
-    #[must_use]
     pub fn base(&mut self) -> BASE_W<MPU_RBAR_A2_SPEC> {
         BASE_W::new(self, 5)
     }

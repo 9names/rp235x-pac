@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:4 - Value to drive to USB PHY DP pulldown resistor trim control Experimental data suggests that the reset value will work, but this register allows adjustment if required"]
     #[inline(always)]
-    #[must_use]
     pub fn dp_pulldn_trim(&mut self) -> DP_PULLDN_TRIM_W<USBPHY_TRIM_SPEC> {
         DP_PULLDN_TRIM_W::new(self, 0)
     }
     #[doc = "Bits 8:12 - Value to drive to USB PHY DM pulldown resistor trim control Experimental data suggests that the reset value will work, but this register allows adjustment if required"]
     #[inline(always)]
-    #[must_use]
     pub fn dm_pulldn_trim(&mut self) -> DM_PULLDN_TRIM_W<USBPHY_TRIM_SPEC> {
         DM_PULLDN_TRIM_W::new(self, 8)
     }

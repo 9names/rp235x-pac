@@ -61,37 +61,31 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Output enable value for GPIO32...47"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GPIO_W<GPIO_HI_OE_SPEC> {
         GPIO_W::new(self, 0)
     }
     #[doc = "Bit 24 - Output enable value for USB D+ pin"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dp(&mut self) -> USB_DP_W<GPIO_HI_OE_SPEC> {
         USB_DP_W::new(self, 24)
     }
     #[doc = "Bit 25 - Output enable value for USB D- pin"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dm(&mut self) -> USB_DM_W<GPIO_HI_OE_SPEC> {
         USB_DM_W::new(self, 25)
     }
     #[doc = "Bit 26 - Output enable value for QSPI SCK pin"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sck(&mut self) -> QSPI_SCK_W<GPIO_HI_OE_SPEC> {
         QSPI_SCK_W::new(self, 26)
     }
     #[doc = "Bit 27 - Output enable value for QSPI CSn pin"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_csn(&mut self) -> QSPI_CSN_W<GPIO_HI_OE_SPEC> {
         QSPI_CSN_W::new(self, 27)
     }
     #[doc = "Bits 28:31 - Output enable value for QSPI SD0 (MOSI), SD1 (MISO), SD2 and SD3 pins"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sd(&mut self) -> QSPI_SD_W<GPIO_HI_OE_SPEC> {
         QSPI_SD_W::new(self, 28)
     }

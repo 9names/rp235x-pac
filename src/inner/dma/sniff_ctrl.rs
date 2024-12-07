@@ -171,37 +171,31 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable sniffer"]
     #[inline(always)]
-    #[must_use]
     pub fn en(&mut self) -> EN_W<SNIFF_CTRL_SPEC> {
         EN_W::new(self, 0)
     }
     #[doc = "Bits 1:4 - DMA channel for Sniffer to observe"]
     #[inline(always)]
-    #[must_use]
     pub fn dmach(&mut self) -> DMACH_W<SNIFF_CTRL_SPEC> {
         DMACH_W::new(self, 1)
     }
     #[doc = "Bits 5:8"]
     #[inline(always)]
-    #[must_use]
     pub fn calc(&mut self) -> CALC_W<SNIFF_CTRL_SPEC> {
         CALC_W::new(self, 5)
     }
     #[doc = "Bit 9 - Locally perform a byte reverse on the sniffed data, before feeding into checksum. Note that the sniff hardware is downstream of the DMA channel byteswap performed in the read master: if channel CTRL_BSWAP and SNIFF_CTRL_BSWAP are both enabled, their effects cancel from the sniffer's point of view."]
     #[inline(always)]
-    #[must_use]
     pub fn bswap(&mut self) -> BSWAP_W<SNIFF_CTRL_SPEC> {
         BSWAP_W::new(self, 9)
     }
     #[doc = "Bit 10 - If set, the result appears bit-reversed when read. This does not affect the way the checksum is calculated; the result is transformed on-the-fly between the result register and the bus."]
     #[inline(always)]
-    #[must_use]
     pub fn out_rev(&mut self) -> OUT_REV_W<SNIFF_CTRL_SPEC> {
         OUT_REV_W::new(self, 10)
     }
     #[doc = "Bit 11 - If set, the result appears inverted (bitwise complement) when read. This does not affect the way the checksum is calculated; the result is transformed on-the-fly between the result register and the bus."]
     #[inline(always)]
-    #[must_use]
     pub fn out_inv(&mut self) -> OUT_INV_W<SNIFF_CTRL_SPEC> {
         OUT_INV_W::new(self, 11)
     }

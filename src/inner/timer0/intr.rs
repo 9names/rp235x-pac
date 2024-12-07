@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm_0(&mut self) -> ALARM_0_W<INTR_SPEC> {
         ALARM_0_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm_1(&mut self) -> ALARM_1_W<INTR_SPEC> {
         ALARM_1_W::new(self, 1)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm_2(&mut self) -> ALARM_2_W<INTR_SPEC> {
         ALARM_2_W::new(self, 2)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm_3(&mut self) -> ALARM_3_W<INTR_SPEC> {
         ALARM_3_W::new(self, 3)
     }

@@ -7,7 +7,6 @@ pub type TRIG_FORCE_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    #[must_use]
     pub fn trig_force(&mut self) -> TRIG_FORCE_W<TRIG_FORCE_SPEC> {
         TRIG_FORCE_W::new(self, 0)
     }

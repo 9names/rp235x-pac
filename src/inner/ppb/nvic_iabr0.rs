@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For ACTIVE\\[m\\]
 in NVIC_IABR*n, indicates the active state for interrupt 32*n+m"]
     #[inline(always)]
-    #[must_use]
     pub fn active(&mut self) -> ACTIVE_W<NVIC_IABR0_SPEC> {
         ACTIVE_W::new(self, 0)
     }

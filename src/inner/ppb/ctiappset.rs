@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Setting a bit HIGH generates a channel event for the selected channel. There is one bit of the register for each channel"]
     #[inline(always)]
-    #[must_use]
     pub fn appset(&mut self) -> APPSET_W<CTIAPPSET_SPEC> {
         APPSET_W::new(self, 0)
     }

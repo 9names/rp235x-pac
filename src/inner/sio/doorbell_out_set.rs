@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn doorbell_out_set(&mut self) -> DOORBELL_OUT_SET_W<DOORBELL_OUT_SET_SPEC> {
         DOORBELL_OUT_SET_W::new(self, 0)
     }

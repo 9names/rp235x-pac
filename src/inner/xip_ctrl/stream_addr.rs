@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 2:31 - The address of the next word to be streamed from flash to the streaming FIFO. Increments automatically after each flash access. Write the initial access address here before starting a streaming read."]
     #[inline(always)]
-    #[must_use]
     pub fn stream_addr(&mut self) -> STREAM_ADDR_W<STREAM_ADDR_SPEC> {
         STREAM_ADDR_W::new(self, 2)
     }

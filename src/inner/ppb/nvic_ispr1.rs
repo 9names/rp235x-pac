@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For SETPEND\\[m\\]
 in NVIC_ISPR*n, indicates whether interrupt 32*n + m is pending"]
     #[inline(always)]
-    #[must_use]
     pub fn setpend(&mut self) -> SETPEND_W<NVIC_ISPR1_SPEC> {
         SETPEND_W::new(self, 0)
     }

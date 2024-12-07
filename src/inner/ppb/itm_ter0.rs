@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For STIMENA\\[m\\]
 in ITM_TER*n, controls whether ITM_STIM(32*n + m) is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn stimena(&mut self) -> STIMENA_W<ITM_TER0_SPEC> {
         STIMENA_W::new(self, 0)
     }

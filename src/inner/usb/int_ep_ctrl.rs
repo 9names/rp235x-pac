@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 1:15 - Host: Enable interrupt endpoint 1 -> 15"]
     #[inline(always)]
-    #[must_use]
     pub fn int_ep_active(&mut self) -> INT_EP_ACTIVE_W<INT_EP_CTRL_SPEC> {
         INT_EP_ACTIVE_W::new(self, 1)
     }

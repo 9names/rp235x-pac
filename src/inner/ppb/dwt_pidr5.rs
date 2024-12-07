@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn dwt_pidr5(&mut self) -> DWT_PIDR5_W<DWT_PIDR5_SPEC> {
         DWT_PIDR5_W::new(self, 0)
     }

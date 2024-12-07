@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Writing 1'b1 to this register causes an internal RNG reset."]
     #[inline(always)]
-    #[must_use]
     pub fn trng_sw_reset(&mut self) -> TRNG_SW_RESET_W<TRNG_SW_RESET_SPEC> {
         TRNG_SW_RESET_W::new(self, 0)
     }

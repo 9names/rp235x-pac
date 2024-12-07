@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn dwt_comp0(&mut self) -> DWT_COMP0_W<DWT_COMP0_SPEC> {
         DWT_COMP0_W::new(self, 0)
     }

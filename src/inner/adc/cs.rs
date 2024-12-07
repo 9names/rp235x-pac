@@ -77,43 +77,36 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Power on ADC and enable its clock. 1 - enabled. 0 - disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en(&mut self) -> EN_W<CS_SPEC> {
         EN_W::new(self, 0)
     }
     #[doc = "Bit 1 - Power on temperature sensor. 1 - enabled. 0 - disabled."]
     #[inline(always)]
-    #[must_use]
     pub fn ts_en(&mut self) -> TS_EN_W<CS_SPEC> {
         TS_EN_W::new(self, 1)
     }
     #[doc = "Bit 2 - Start a single conversion. Self-clearing. Ignored if start_many is asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn start_once(&mut self) -> START_ONCE_W<CS_SPEC> {
         START_ONCE_W::new(self, 2)
     }
     #[doc = "Bit 3 - Continuously perform conversions whilst this bit is 1. A new conversion will start immediately after the previous finishes."]
     #[inline(always)]
-    #[must_use]
     pub fn start_many(&mut self) -> START_MANY_W<CS_SPEC> {
         START_MANY_W::new(self, 3)
     }
     #[doc = "Bit 10 - Some past ADC conversion encountered an error. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn err_sticky(&mut self) -> ERR_STICKY_W<CS_SPEC> {
         ERR_STICKY_W::new(self, 10)
     }
     #[doc = "Bits 12:15 - Select analog mux input. Updated automatically in round-robin mode. This is corrected for the package option so only ADC channels which are bonded are available, and in the correct order"]
     #[inline(always)]
-    #[must_use]
     pub fn ainsel(&mut self) -> AINSEL_W<CS_SPEC> {
         AINSEL_W::new(self, 12)
     }
     #[doc = "Bits 16:24 - Round-robin sampling. 1 bit per channel. Set all bits to 0 to disable. Otherwise, the ADC will cycle through each enabled channel in a round-robin fashion. The first channel to be sampled will be the one currently indicated by AINSEL. AINSEL will be updated after each conversion with the newly-selected channel."]
     #[inline(always)]
-    #[must_use]
     pub fn rrobin(&mut self) -> RROBIN_W<CS_SPEC> {
         RROBIN_W::new(self, 16)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn bootlock_stat(&mut self) -> BOOTLOCK_STAT_W<BOOTLOCK_STAT_SPEC> {
         BOOTLOCK_STAT_W::new(self, 0)
     }

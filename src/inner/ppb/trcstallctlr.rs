@@ -32,13 +32,11 @@ impl R {
 impl W {
     #[doc = "Bits 2:3 - Threshold at which stalling becomes active. This provides four levels. This level can be varied to optimize the level of invasion caused by stalling, balanced against the risk of a FIFO overflow"]
     #[inline(always)]
-    #[must_use]
     pub fn level(&mut self) -> LEVEL_W<TRCSTALLCTLR_SPEC> {
         LEVEL_W::new(self, 2)
     }
     #[doc = "Bit 8 - Stall processor based on instruction trace buffer space"]
     #[inline(always)]
-    #[must_use]
     pub fn istall(&mut self) -> ISTALL_W<TRCSTALLCTLR_SPEC> {
         ISTALL_W::new(self, 8)
     }

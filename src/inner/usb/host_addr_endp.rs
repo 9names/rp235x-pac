@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:6 - Device address"]
     #[inline(always)]
-    #[must_use]
     pub fn address(&mut self) -> ADDRESS_W<HOST_ADDR_ENDP_SPEC> {
         ADDRESS_W::new(self, 0)
     }
     #[doc = "Bits 16:19 - Endpoint number of the interrupt endpoint"]
     #[inline(always)]
-    #[must_use]
     pub fn endpoint(&mut self) -> ENDPOINT_W<HOST_ADDR_ENDP_SPEC> {
         ENDPOINT_W::new(self, 16)
     }
     #[doc = "Bit 25 - Direction of the interrupt endpoint. In=0, Out=1"]
     #[inline(always)]
-    #[must_use]
     pub fn intep_dir(&mut self) -> INTEP_DIR_W<HOST_ADDR_ENDP_SPEC> {
         INTEP_DIR_W::new(self, 25)
     }
     #[doc = "Bit 26 - Interrupt EP requires preamble (is a low speed device on a full speed hub)"]
     #[inline(always)]
-    #[must_use]
     pub fn intep_preamble(&mut self) -> INTEP_PREAMBLE_W<HOST_ADDR_ENDP_SPEC> {
         INTEP_PREAMBLE_W::new(self, 26)
     }

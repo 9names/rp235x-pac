@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn write_once1(&mut self) -> WRITE_ONCE1_W<WRITE_ONCE1_SPEC> {
         WRITE_ONCE1_W::new(self, 0)
     }

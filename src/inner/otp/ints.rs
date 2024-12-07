@@ -40,7 +40,7 @@ impl R {
     }
 }
 impl W {}
-#[doc = "Interrupt status after masking &amp; forcing  
+#[doc = "Interrupt status after masking & forcing  
 
 You can [`read`](crate::Reg::read) this register and get [`ints::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`ints::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct INTS_SPEC;

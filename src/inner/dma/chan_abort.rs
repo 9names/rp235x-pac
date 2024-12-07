@@ -7,7 +7,6 @@ pub type CHAN_ABORT_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl W {
     #[doc = "Bits 0:15 - Each bit corresponds to a channel. Writing a 1 aborts whatever transfer sequence is in progress on that channel. The bit will remain high until any in-flight transfers have been flushed through the address and data FIFOs. After writing, this register must be polled until it returns all-zero. Until this point, it is unsafe to restart the channel."]
     #[inline(always)]
-    #[must_use]
     pub fn chan_abort(&mut self) -> CHAN_ABORT_W<CHAN_ABORT_SPEC> {
         CHAN_ABORT_W::new(self, 0)
     }

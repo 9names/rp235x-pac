@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - The integer baud rate divisor. These bits are cleared to 0 on reset."]
     #[inline(always)]
-    #[must_use]
     pub fn baud_divint(&mut self) -> BAUD_DIVINT_W<UARTIBRD_SPEC> {
         BAUD_DIVINT_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 3 - Powerup request bit:"]
     #[inline(always)]
-    #[must_use]
     pub fn pu(&mut self) -> PU_W<TRCPDCR_SPEC> {
         PU_W::new(self, 3)
     }

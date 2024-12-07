@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - 0 - low priority, 1 - high priority"]
     #[inline(always)]
-    #[must_use]
     pub fn proc0(&mut self) -> PROC0_W<BUS_PRIORITY_SPEC> {
         PROC0_W::new(self, 0)
     }
     #[doc = "Bit 4 - 0 - low priority, 1 - high priority"]
     #[inline(always)]
-    #[must_use]
     pub fn proc1(&mut self) -> PROC1_W<BUS_PRIORITY_SPEC> {
         PROC1_W::new(self, 4)
     }
     #[doc = "Bit 8 - 0 - low priority, 1 - high priority"]
     #[inline(always)]
-    #[must_use]
     pub fn dma_r(&mut self) -> DMA_R_W<BUS_PRIORITY_SPEC> {
         DMA_R_W::new(self, 8)
     }
     #[doc = "Bit 12 - 0 - low priority, 1 - high priority"]
     #[inline(always)]
-    #[must_use]
     pub fn dma_w(&mut self) -> DMA_W_W<BUS_PRIORITY_SPEC> {
         DMA_W_W::new(self, 12)
     }

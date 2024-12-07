@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Sets the value of the ctitrigout outputs"]
     #[inline(always)]
-    #[must_use]
     pub fn cttrigout(&mut self) -> CTTRIGOUT_W<ITTRIGOUT_SPEC> {
         CTTRIGOUT_W::new(self, 0)
     }

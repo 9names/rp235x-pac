@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn interp0_base0(&mut self) -> INTERP0_BASE0_W<INTERP0_BASE0_SPEC> {
         INTERP0_BASE0_W::new(self, 0)
     }

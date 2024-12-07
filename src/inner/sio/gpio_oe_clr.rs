@@ -2,12 +2,11 @@
 pub type R = crate::R<GPIO_OE_CLR_SPEC>;
 #[doc = "Register `GPIO_OE_CLR` writer"]
 pub type W = crate::W<GPIO_OE_CLR_SPEC>;
-#[doc = "Field `GPIO_OE_CLR` writer - Perform an atomic bit-clear on GPIO_OE, i.e. `GPIO_OE &amp;= ~wdata`"]
+#[doc = "Field `GPIO_OE_CLR` writer - Perform an atomic bit-clear on GPIO_OE, i.e. `GPIO_OE &= ~wdata`"]
 pub type GPIO_OE_CLR_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
-    #[doc = "Bits 0:31 - Perform an atomic bit-clear on GPIO_OE, i.e. `GPIO_OE &amp;= ~wdata`"]
+    #[doc = "Bits 0:31 - Perform an atomic bit-clear on GPIO_OE, i.e. `GPIO_OE &= ~wdata`"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_oe_clr(&mut self) -> GPIO_OE_CLR_W<GPIO_OE_CLR_SPEC> {
         GPIO_OE_CLR_W::new(self, 0)
     }

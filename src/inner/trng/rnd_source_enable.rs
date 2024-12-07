@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - * 1'b1 - entropy source is enabled. *1'b0 - entropy source is disabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rnd_src_en(&mut self) -> RND_SRC_EN_W<RND_SOURCE_ENABLE_SPEC> {
         RND_SRC_EN_W::new(self, 0)
     }

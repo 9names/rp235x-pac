@@ -87,31 +87,26 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Determines whether unprivileged accesses are permitted to pend interrupts via the STIR"]
     #[inline(always)]
-    #[must_use]
     pub fn usersetmpend(&mut self) -> USERSETMPEND_W<CCR_SPEC> {
         USERSETMPEND_W::new(self, 1)
     }
     #[doc = "Bit 3 - Controls the trapping of unaligned word or halfword accesses"]
     #[inline(always)]
-    #[must_use]
     pub fn unalign_trp(&mut self) -> UNALIGN_TRP_W<CCR_SPEC> {
         UNALIGN_TRP_W::new(self, 3)
     }
     #[doc = "Bit 4 - Controls the generation of a DIVBYZERO UsageFault when attempting to perform integer division by zero"]
     #[inline(always)]
-    #[must_use]
     pub fn div_0_trp(&mut self) -> DIV_0_TRP_W<CCR_SPEC> {
         DIV_0_TRP_W::new(self, 4)
     }
     #[doc = "Bit 8 - Determines the effect of precise BusFaults on handlers running at a requested priority less than 0"]
     #[inline(always)]
-    #[must_use]
     pub fn bfhfnmign(&mut self) -> BFHFNMIGN_W<CCR_SPEC> {
         BFHFNMIGN_W::new(self, 8)
     }
     #[doc = "Bit 10 - Controls the effect of a stack limit violation while executing at a requested priority less than 0"]
     #[inline(always)]
-    #[must_use]
     pub fn stkofhfnmign(&mut self) -> STKOFHFNMIGN_W<CCR_SPEC> {
         STKOFHFNMIGN_W::new(self, 10)
     }

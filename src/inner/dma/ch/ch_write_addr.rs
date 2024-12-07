@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - This register updates automatically each time a write completes. The current value is the next address to be written by this channel."]
     #[inline(always)]
-    #[must_use]
     pub fn ch0_write_addr(&mut self) -> CH0_WRITE_ADDR_W<CH_WRITE_ADDR_SPEC> {
         CH0_WRITE_ADDR_W::new(self, 0)
     }

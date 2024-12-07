@@ -48,19 +48,16 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Read command has returned data"]
     #[inline(always)]
-    #[must_use]
     pub fn rdata_vld(&mut self) -> RDATA_VLD_W<SBPI_STATUS_SPEC> {
         RDATA_VLD_W::new(self, 0)
     }
     #[doc = "Bit 4 - Last instruction done"]
     #[inline(always)]
-    #[must_use]
     pub fn instr_done(&mut self) -> INSTR_DONE_W<SBPI_STATUS_SPEC> {
         INSTR_DONE_W::new(self, 4)
     }
     #[doc = "Bit 8 - Last instruction missed (dropped), as the previous has not finished running"]
     #[inline(always)]
-    #[must_use]
     pub fn instr_miss(&mut self) -> INSTR_MISS_W<SBPI_STATUS_SPEC> {
         INSTR_MISS_W::new(self, 8)
     }

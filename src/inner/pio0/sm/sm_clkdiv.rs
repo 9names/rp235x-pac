@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 8:15 - Fractional part of clock divisor"]
     #[inline(always)]
-    #[must_use]
     pub fn frac(&mut self) -> FRAC_W<SM_CLKDIV_SPEC> {
         FRAC_W::new(self, 8)
     }
     #[doc = "Bits 16:31 - Effective frequency is sysclk/(int + frac/256). Value of 0 is interpreted as 65536. If INT is 0, FRAC must also be 0."]
     #[inline(always)]
-    #[must_use]
     pub fn int(&mut self) -> INT_W<SM_CLKDIV_SPEC> {
         INT_W::new(self, 16)
     }

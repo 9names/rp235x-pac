@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - The command prefix bits to prepend on each new transfer, if Mx_WFMT_PREFIX_LEN is nonzero."]
     #[inline(always)]
-    #[must_use]
     pub fn prefix(&mut self) -> PREFIX_W<M0_WCMD_SPEC> {
         PREFIX_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - The command suffix bits following the address, if Mx_WFMT_SUFFIX_LEN is nonzero."]
     #[inline(always)]
-    #[must_use]
     pub fn suffix(&mut self) -> SUFFIX_W<M0_WCMD_SPEC> {
         SUFFIX_W::new(self, 8)
     }

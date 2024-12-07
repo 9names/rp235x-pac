@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn windex(&mut self) -> WINDEX_W<SETUP_PACKET_HIGH_SPEC> {
         WINDEX_W::new(self, 0)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    #[must_use]
     pub fn wlength(&mut self) -> WLENGTH_W<SETUP_PACKET_HIGH_SPEC> {
         WLENGTH_W::new(self, 16)
     }

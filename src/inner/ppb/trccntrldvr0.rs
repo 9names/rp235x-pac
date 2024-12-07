@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Defines the reload value for the counter. This value is loaded into the counter each time the reload event occurs"]
     #[inline(always)]
-    #[must_use]
     pub fn value(&mut self) -> VALUE_W<TRCCNTRLDVR0_SPEC> {
         VALUE_W::new(self, 0)
     }

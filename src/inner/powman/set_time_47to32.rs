@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - For setting the time, do not use for reading the time, use POWMAN_READ_TIME_UPPER and POWMAN_READ_TIME_LOWER. This field must only be written when POWMAN_TIMER_RUN=0"]
     #[inline(always)]
-    #[must_use]
     pub fn set_time_47to32(&mut self) -> SET_TIME_47TO32_W<SET_TIME_47TO32_SPEC> {
         SET_TIME_47TO32_W::new(self, 0)
     }

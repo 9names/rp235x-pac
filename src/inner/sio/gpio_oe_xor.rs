@@ -7,7 +7,6 @@ pub type GPIO_OE_XOR_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31 - Perform an atomic bitwise XOR on GPIO_OE, i.e. `GPIO_OE ^= wdata`"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_oe_xor(&mut self) -> GPIO_OE_XOR_W<GPIO_OE_XOR_SPEC> {
         GPIO_OE_XOR_W::new(self, 0)
     }

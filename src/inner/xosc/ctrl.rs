@@ -167,13 +167,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:11 - The 12-bit code is intended to give some protection against accidental writes. An invalid setting will retain the previous value. The actual value being used can be read from STATUS_FREQ_RANGE"]
     #[inline(always)]
-    #[must_use]
     pub fn freq_range(&mut self) -> FREQ_RANGE_W<CTRL_SPEC> {
         FREQ_RANGE_W::new(self, 0)
     }
     #[doc = "Bits 12:23 - On power-up this field is initialised to DISABLE and the chip runs from the ROSC. If the chip has subsequently been programmed to run from the XOSC then setting this field to DISABLE may lock-up the chip. If this is a concern then run the clk_ref from the ROSC and enable the clk_sys RESUS feature. The 12-bit code is intended to give some protection against accidental writes. An invalid setting will retain the previous value. The actual value being used can be read from STATUS_ENABLED"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<CTRL_SPEC> {
         ENABLE_W::new(self, 12)
     }

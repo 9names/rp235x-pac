@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn doorbell_in_clr(&mut self) -> DOORBELL_IN_CLR_W<DOORBELL_IN_CLR_SPEC> {
         DOORBELL_IN_CLR_W::new(self, 0)
     }

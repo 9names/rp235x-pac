@@ -87,7 +87,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:1"]
     #[inline(always)]
-    #[must_use]
     pub fn src(&mut self) -> SRC_W<DFTCLK_LPOSC_CTRL_SPEC> {
         SRC_W::new(self, 0)
     }

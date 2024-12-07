@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Enables a cross trigger event to the corresponding channel when a ctitrigin input is activated. There is one bit of the field for each of the four channels"]
     #[inline(always)]
-    #[must_use]
     pub fn triginen(&mut self) -> TRIGINEN_W<CTIINEN7_SPEC> {
         TRIGINEN_W::new(self, 0)
     }

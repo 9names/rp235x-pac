@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:5"]
     #[inline(always)]
-    #[must_use]
     pub fn ch8_dbg_ctdreq(&mut self) -> CH8_DBG_CTDREQ_W<CH8_DBG_CTDREQ_SPEC> {
         CH8_DBG_CTDREQ_W::new(self, 0)
     }

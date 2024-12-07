@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Integration Mode instruction ATVALID out"]
     #[inline(always)]
-    #[must_use]
     pub fn atvalid(&mut self) -> ATVALID_W<TRCITIATBOUTR_SPEC> {
         ATVALID_W::new(self, 0)
     }
     #[doc = "Bit 1 - Integration Mode instruction AFREADY out"]
     #[inline(always)]
-    #[must_use]
     pub fn afready(&mut self) -> AFREADY_W<TRCITIATBOUTR_SPEC> {
         AFREADY_W::new(self, 1)
     }

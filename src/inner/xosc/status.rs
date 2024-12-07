@@ -95,7 +95,6 @@ impl R {
 impl W {
     #[doc = "Bit 24 - An invalid value has been written to CTRL_ENABLE or CTRL_FREQ_RANGE or DORMANT"]
     #[inline(always)]
-    #[must_use]
     pub fn badwrite(&mut self) -> BADWRITE_W<STATUS_SPEC> {
         BADWRITE_W::new(self, 24)
     }

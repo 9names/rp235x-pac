@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:19"]
     #[inline(always)]
-    #[must_use]
     pub fn nmi_mask1(&mut self) -> NMI_MASK1_W<NMI_MASK1_SPEC> {
         NMI_MASK1_W::new(self, 0)
     }

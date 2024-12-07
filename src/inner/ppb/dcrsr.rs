@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:6 - Specifies the general-purpose register, special-purpose register, or FP register to transfer"]
     #[inline(always)]
-    #[must_use]
     pub fn regsel(&mut self) -> REGSEL_W<DCRSR_SPEC> {
         REGSEL_W::new(self, 0)
     }
     #[doc = "Bit 16 - Specifies the access type for the transfer"]
     #[inline(always)]
-    #[must_use]
     pub fn regwnr(&mut self) -> REGWNR_W<DCRSR_SPEC> {
         REGWNR_W::new(self, 16)
     }

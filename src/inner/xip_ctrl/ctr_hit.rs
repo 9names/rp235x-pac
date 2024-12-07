@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - A 32 bit saturating counter that increments upon each cache hit, i.e. when an XIP access is serviced directly from cached data. Write any value to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn ctr_hit(&mut self) -> CTR_HIT_W<CTR_HIT_SPEC> {
         CTR_HIT_W::new(self, 0)
     }

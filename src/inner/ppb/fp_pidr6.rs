@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn fp_pidr6(&mut self) -> FP_PIDR6_W<FP_PIDR6_SPEC> {
         FP_PIDR6_W::new(self, 0)
     }

@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn ep0_in(&mut self) -> EP0_IN_W<EP_STALL_ARM_SPEC> {
         EP0_IN_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn ep0_out(&mut self) -> EP0_OUT_W<EP_STALL_ARM_SPEC> {
         EP0_OUT_W::new(self, 1)
     }

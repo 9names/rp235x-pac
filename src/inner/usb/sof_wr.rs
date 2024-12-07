@@ -7,7 +7,6 @@ pub type COUNT_W<'a, REG> = crate::FieldWriter<'a, REG, 11, u16>;
 impl W {
     #[doc = "Bits 0:10"]
     #[inline(always)]
-    #[must_use]
     pub fn count(&mut self) -> COUNT_W<SOF_WR_SPEC> {
         COUNT_W::new(self, 0)
     }

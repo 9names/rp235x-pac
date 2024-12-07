@@ -263,97 +263,81 @@ impl R {
 impl W {
     #[doc = "Bit 2"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio0_edge_low(&mut self) -> GPIO0_EDGE_LOW_W<INTR_SPEC> {
         GPIO0_EDGE_LOW_W::new(self, 2)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio0_edge_high(&mut self) -> GPIO0_EDGE_HIGH_W<INTR_SPEC> {
         GPIO0_EDGE_HIGH_W::new(self, 3)
     }
     #[doc = "Bit 6"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio1_edge_low(&mut self) -> GPIO1_EDGE_LOW_W<INTR_SPEC> {
         GPIO1_EDGE_LOW_W::new(self, 6)
     }
     #[doc = "Bit 7"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio1_edge_high(&mut self) -> GPIO1_EDGE_HIGH_W<INTR_SPEC> {
         GPIO1_EDGE_HIGH_W::new(self, 7)
     }
     #[doc = "Bit 10"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio2_edge_low(&mut self) -> GPIO2_EDGE_LOW_W<INTR_SPEC> {
         GPIO2_EDGE_LOW_W::new(self, 10)
     }
     #[doc = "Bit 11"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio2_edge_high(&mut self) -> GPIO2_EDGE_HIGH_W<INTR_SPEC> {
         GPIO2_EDGE_HIGH_W::new(self, 11)
     }
     #[doc = "Bit 14"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio3_edge_low(&mut self) -> GPIO3_EDGE_LOW_W<INTR_SPEC> {
         GPIO3_EDGE_LOW_W::new(self, 14)
     }
     #[doc = "Bit 15"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio3_edge_high(&mut self) -> GPIO3_EDGE_HIGH_W<INTR_SPEC> {
         GPIO3_EDGE_HIGH_W::new(self, 15)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio4_edge_low(&mut self) -> GPIO4_EDGE_LOW_W<INTR_SPEC> {
         GPIO4_EDGE_LOW_W::new(self, 18)
     }
     #[doc = "Bit 19"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio4_edge_high(&mut self) -> GPIO4_EDGE_HIGH_W<INTR_SPEC> {
         GPIO4_EDGE_HIGH_W::new(self, 19)
     }
     #[doc = "Bit 22"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio5_edge_low(&mut self) -> GPIO5_EDGE_LOW_W<INTR_SPEC> {
         GPIO5_EDGE_LOW_W::new(self, 22)
     }
     #[doc = "Bit 23"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio5_edge_high(&mut self) -> GPIO5_EDGE_HIGH_W<INTR_SPEC> {
         GPIO5_EDGE_HIGH_W::new(self, 23)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio6_edge_low(&mut self) -> GPIO6_EDGE_LOW_W<INTR_SPEC> {
         GPIO6_EDGE_LOW_W::new(self, 26)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio6_edge_high(&mut self) -> GPIO6_EDGE_HIGH_W<INTR_SPEC> {
         GPIO6_EDGE_HIGH_W::new(self, 27)
     }
     #[doc = "Bit 30"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio7_edge_low(&mut self) -> GPIO7_EDGE_LOW_W<INTR_SPEC> {
         GPIO7_EDGE_LOW_W::new(self, 30)
     }
     #[doc = "Bit 31"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio7_edge_high(&mut self) -> GPIO7_EDGE_HIGH_W<INTR_SPEC> {
         GPIO7_EDGE_HIGH_W::new(self, 31)
     }

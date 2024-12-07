@@ -74,7 +74,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Forcibly disarm the glitch detectors, if they are armed by OTP. Ignored if ARM is YES. This register is Secure read/write only."]
     #[inline(always)]
-    #[must_use]
     pub fn disarm(&mut self) -> DISARM_W<DISARM_SPEC> {
         DISARM_W::new(self, 0)
     }

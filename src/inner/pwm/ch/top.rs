@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn top(&mut self) -> TOP_W<TOP_SPEC> {
         TOP_W::new(self, 0)
     }

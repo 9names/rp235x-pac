@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:1 - 0 -> gpio12 1 -> gpio20 2 -> gpio14 3 -> gpio22"]
     #[inline(always)]
-    #[must_use]
     pub fn source_sel(&mut self) -> SOURCE_SEL_W<EXT_TIME_REF_SPEC> {
         SOURCE_SEL_W::new(self, 0)
     }
     #[doc = "Bit 4 - Use the selected GPIO to drive the 32kHz low power clock, in place of LPOSC. This field must only be written when POWMAN_TIMER_RUN=0"]
     #[inline(always)]
-    #[must_use]
     pub fn drive_lpck(&mut self) -> DRIVE_LPCK_W<EXT_TIME_REF_SPEC> {
         DRIVE_LPCK_W::new(self, 4)
     }

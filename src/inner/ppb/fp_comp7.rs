@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Selects between flashpatch and breakpoint functionality"]
     #[inline(always)]
-    #[must_use]
     pub fn be(&mut self) -> BE_W<FP_COMP7_SPEC> {
         BE_W::new(self, 0)
     }

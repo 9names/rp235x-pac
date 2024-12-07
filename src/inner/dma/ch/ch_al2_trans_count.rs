@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn ch0_al2_trans_count(&mut self) -> CH0_AL2_TRANS_COUNT_W<CH_AL2_TRANS_COUNT_SPEC> {
         CH0_AL2_TRANS_COUNT_W::new(self, 0)
     }

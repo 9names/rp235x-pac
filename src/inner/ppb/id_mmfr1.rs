@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn id_mmfr1(&mut self) -> ID_MMFR1_W<ID_MMFR1_SPEC> {
         ID_MMFR1_W::new(self, 0)
     }

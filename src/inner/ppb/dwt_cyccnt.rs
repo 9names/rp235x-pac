@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Increments one on each processor clock cycle when DWT_CTRL.CYCCNTENA == 1 and DEMCR.TRCENA == 1. On overflow, CYCCNT wraps to zero"]
     #[inline(always)]
-    #[must_use]
     pub fn cyccnt(&mut self) -> CYCCNT_W<DWT_CYCCNT_SPEC> {
         CYCCNT_W::new(self, 0)
     }

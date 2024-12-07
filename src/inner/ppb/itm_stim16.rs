@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Data to write to the Stimulus Port FIFO, for forwarding as an Instrumentation packet. The size of write access determines the type of Instrumentation packet generated."]
     #[inline(always)]
-    #[must_use]
     pub fn stimulus(&mut self) -> STIMULUS_W<ITM_STIM16_SPEC> {
         STIMULUS_W::new(self, 0)
     }

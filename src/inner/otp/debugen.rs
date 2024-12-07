@@ -52,31 +52,26 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable core 0's Mem-AP if it is currently disabled. The Mem-AP is disabled by default if either of the debug disable critical flags is set, or if at least one debug key has been enrolled and the least secure of these enrolled key values has not been provided over SWD. Note also that core Mem-APs are unconditionally disabled when a core is switched to RISC-V mode (by setting the ARCHSEL bit and performing a warm reset of the core)."]
     #[inline(always)]
-    #[must_use]
     pub fn proc0(&mut self) -> PROC0_W<DEBUGEN_SPEC> {
         PROC0_W::new(self, 0)
     }
     #[doc = "Bit 1 - Permit core 0's Mem-AP to generate Secure accesses, assuming it is enabled at all. Also enable secure debug of core 0 (SPIDEN and SPNIDEN). Secure debug of core 0 is disabled by default if the secure debug disable critical flag is set, or if at least one debug key has been enrolled and the most secure of these enrolled key values not yet provided over SWD. Note also that core Mem-APs are unconditionally disabled when a core is switched to RISC-V mode (by setting the ARCHSEL bit and performing a warm reset of the core)."]
     #[inline(always)]
-    #[must_use]
     pub fn proc0_secure(&mut self) -> PROC0_SECURE_W<DEBUGEN_SPEC> {
         PROC0_SECURE_W::new(self, 1)
     }
     #[doc = "Bit 2 - Enable core 1's Mem-AP if it is currently disabled. The Mem-AP is disabled by default if either of the debug disable critical flags is set, or if at least one debug key has been enrolled and the least secure of these enrolled key values has not been provided over SWD."]
     #[inline(always)]
-    #[must_use]
     pub fn proc1(&mut self) -> PROC1_W<DEBUGEN_SPEC> {
         PROC1_W::new(self, 2)
     }
     #[doc = "Bit 3 - Permit core 1's Mem-AP to generate Secure accesses, assuming it is enabled at all. Also enable secure debug of core 1 (SPIDEN and SPNIDEN). Secure debug of core 1 is disabled by default if the secure debug disable critical flag is set, or if at least one debug key has been enrolled and the most secure of these enrolled key values not yet provided over SWD."]
     #[inline(always)]
-    #[must_use]
     pub fn proc1_secure(&mut self) -> PROC1_SECURE_W<DEBUGEN_SPEC> {
         PROC1_SECURE_W::new(self, 3)
     }
     #[doc = "Bit 8 - Enable other debug components. Specifically, the CTI, and the APB-AP used to access the RISC-V Debug Module. These components are disabled by default if either of the debug disable critical flags is set, or if at least one debug key has been enrolled and the least secure of these enrolled key values has not been provided over SWD."]
     #[inline(always)]
-    #[must_use]
     pub fn misc(&mut self) -> MISC_W<DEBUGEN_SPEC> {
         MISC_W::new(self, 8)
     }

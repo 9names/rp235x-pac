@@ -7,7 +7,6 @@ pub type CFGRESET_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn cfgreset(&mut self) -> CFGRESET_W<CFGRESET_SPEC> {
         CFGRESET_W::new(self, 0)
     }

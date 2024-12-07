@@ -7,7 +7,6 @@ pub type CRT_KEY_W3_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn crt_key_w3(&mut self) -> CRT_KEY_W3_W<CRT_KEY_W3_SPEC> {
         CRT_KEY_W3_W::new(self, 0)
     }

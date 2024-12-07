@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Fractional component of the divisor, can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn frac(&mut self) -> FRAC_W<CLK_GPOUT2_DIV_SPEC> {
         FRAC_W::new(self, 0)
     }
     #[doc = "Bits 16:31 - Integer part of clock divisor, 0 -> max+1, can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn int(&mut self) -> INT_W<CLK_GPOUT2_DIV_SPEC> {
         INT_W::new(self, 16)
     }

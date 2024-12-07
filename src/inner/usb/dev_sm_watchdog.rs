@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:17"]
     #[inline(always)]
-    #[must_use]
     pub fn limit(&mut self) -> LIMIT_W<DEV_SM_WATCHDOG_SPEC> {
         LIMIT_W::new(self, 0)
     }
     #[doc = "Bit 18"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<DEV_SM_WATCHDOG_SPEC> {
         ENABLE_W::new(self, 18)
     }
     #[doc = "Bit 19 - Set to 1 to forcibly reset the device state machine on watchdog expiry"]
     #[inline(always)]
-    #[must_use]
     pub fn reset(&mut self) -> RESET_W<DEV_SM_WATCHDOG_SPEC> {
         RESET_W::new(self, 19)
     }
     #[doc = "Bit 20"]
     #[inline(always)]
-    #[must_use]
     pub fn fired(&mut self) -> FIRED_W<DEV_SM_WATCHDOG_SPEC> {
         FIRED_W::new(self, 20)
     }

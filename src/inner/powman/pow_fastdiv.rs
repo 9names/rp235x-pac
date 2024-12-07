@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:10 - divides the POWMAN clock to provide a tick for the delay module and state machines when clk_pow is running from the slow clock it is not divided when clk_pow is running from the fast clock it is divided by tick_div"]
     #[inline(always)]
-    #[must_use]
     pub fn pow_fastdiv(&mut self) -> POW_FASTDIV_W<POW_FASTDIV_SPEC> {
         POW_FASTDIV_W::new(self, 0)
     }

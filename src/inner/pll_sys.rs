@@ -46,7 +46,7 @@ impl RegisterBlock {
     pub const fn intf(&self) -> &INTF {
         &self.intf
     }
-    #[doc = "0x1c - Interrupt status after masking &amp; forcing"]
+    #[doc = "0x1c - Interrupt status after masking & forcing"]
     #[inline(always)]
     pub const fn ints(&self) -> &INTS {
         &self.ints
@@ -115,12 +115,12 @@ module"]
 pub type INTF = crate::Reg<intf::INTF_SPEC>;
 #[doc = "Interrupt Force"]
 pub mod intf;
-#[doc = "INTS (rw) register accessor: Interrupt status after masking &amp; forcing  
+#[doc = "INTS (rw) register accessor: Interrupt status after masking & forcing  
 
 You can [`read`](crate::Reg::read) this register and get [`ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@ints`]
 module"]
 pub type INTS = crate::Reg<ints::INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing"]
+#[doc = "Interrupt status after masking & forcing"]
 pub mod ints;

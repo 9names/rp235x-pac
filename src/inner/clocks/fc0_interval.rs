@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_interval(&mut self) -> FC0_INTERVAL_W<FC0_INTERVAL_SPEC> {
         FC0_INTERVAL_W::new(self, 0)
     }

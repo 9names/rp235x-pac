@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Enables a cross trigger event to ctitrigout when the corresponding channel is activated. There is one bit of the field for each of the four channels."]
     #[inline(always)]
-    #[must_use]
     pub fn trigouten(&mut self) -> TRIGOUTEN_W<CTIOUTEN4_SPEC> {
         TRIGOUTEN_W::new(self, 0)
     }

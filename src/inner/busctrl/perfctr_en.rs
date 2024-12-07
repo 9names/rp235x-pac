@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn perfctr_en(&mut self) -> PERFCTR_EN_W<PERFCTR_EN_SPEC> {
         PERFCTR_EN_W::new(self, 0)
     }

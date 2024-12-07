@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - Bit mask to enable tracing on ITM stimulus ports"]
     #[inline(always)]
-    #[must_use]
     pub fn privmask(&mut self) -> PRIVMASK_W<ITM_TPR_SPEC> {
         PRIVMASK_W::new(self, 0)
     }

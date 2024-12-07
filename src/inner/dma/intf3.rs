@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Write 1s to force the corresponding bits in INTS3. The interrupt remains asserted until INTF3 is cleared."]
     #[inline(always)]
-    #[must_use]
     pub fn intf3(&mut self) -> INTF3_W<INTF3_SPEC> {
         INTF3_W::new(self, 0)
     }

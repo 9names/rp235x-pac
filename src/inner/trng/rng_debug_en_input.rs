@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - * 1'b1 - debug mode is enabled. *1'b0 - debug mode is disabled"]
     #[inline(always)]
-    #[must_use]
     pub fn rng_debug_en(&mut self) -> RNG_DEBUG_EN_W<RNG_DEBUG_EN_INPUT_SPEC> {
         RNG_DEBUG_EN_W::new(self, 0)
     }

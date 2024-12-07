@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn locked(&mut self) -> LOCKED_W<LOCKED_SPEC> {
         LOCKED_W::new(self, 0)
     }

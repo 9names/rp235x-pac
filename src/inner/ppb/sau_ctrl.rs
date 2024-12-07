@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enables the SAU"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<SAU_CTRL_SPEC> {
         ENABLE_W::new(self, 0)
     }
     #[doc = "Bit 1 - When SAU_CTRL.ENABLE is 0 this bit controls if the memory is marked as Non-secure or Secure"]
     #[inline(always)]
-    #[must_use]
     pub fn allns(&mut self) -> ALLNS_W<SAU_CTRL_SPEC> {
         ALLNS_W::new(self, 1)
     }

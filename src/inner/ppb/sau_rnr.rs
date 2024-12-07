@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Indicates the SAU region accessed by SAU_RBAR and SAU_RLAR"]
     #[inline(always)]
-    #[must_use]
     pub fn region(&mut self) -> REGION_W<SAU_RNR_SPEC> {
         REGION_W::new(self, 0)
     }

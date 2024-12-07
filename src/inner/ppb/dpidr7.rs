@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn dpidr7(&mut self) -> DPIDR7_W<DPIDR7_SPEC> {
         DPIDR7_W::new(self, 0)
     }

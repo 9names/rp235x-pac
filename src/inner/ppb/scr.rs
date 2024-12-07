@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Indicates sleep-on-exit when returning from Handler mode to Thread mode: 0 = Do not sleep when returning to Thread mode. 1 = Enter sleep, or deep sleep, on return from an ISR to Thread mode. Setting this bit to 1 enables an interrupt driven application to avoid returning to an empty main application."]
     #[inline(always)]
-    #[must_use]
     pub fn sleeponexit(&mut self) -> SLEEPONEXIT_W<SCR_SPEC> {
         SLEEPONEXIT_W::new(self, 1)
     }
     #[doc = "Bit 2 - Controls whether the processor uses sleep or deep sleep as its low power mode: 0 = Sleep. 1 = Deep sleep."]
     #[inline(always)]
-    #[must_use]
     pub fn sleepdeep(&mut self) -> SLEEPDEEP_W<SCR_SPEC> {
         SLEEPDEEP_W::new(self, 2)
     }
     #[doc = "Bit 3 - 0 SLEEPDEEP is available to both security states 1 SLEEPDEEP is only available to Secure state"]
     #[inline(always)]
-    #[must_use]
     pub fn sleepdeeps(&mut self) -> SLEEPDEEPS_W<SCR_SPEC> {
         SLEEPDEEPS_W::new(self, 3)
     }
     #[doc = "Bit 4 - Send Event on Pending bit: 0 = Only enabled interrupts or events can wakeup the processor, disabled interrupts are excluded. 1 = Enabled events and all interrupts, including disabled interrupts, can wakeup the processor. When an event or interrupt becomes pending, the event signal wakes up the processor from WFE. If the processor is not waiting for an event, the event is registered and affects the next WFE. The processor also wakes up on execution of an SEV instruction or an external event."]
     #[inline(always)]
-    #[must_use]
     pub fn sevonpend(&mut self) -> SEVONPEND_W<SCR_SPEC> {
         SEVONPEND_W::new(self, 4)
     }

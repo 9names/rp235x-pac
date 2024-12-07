@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - SDA Setup. It is recommended that if the required delay is 1000ns, then for an ic_clk frequency of 10 MHz, IC_SDA_SETUP should be programmed to a value of 11. IC_SDA_SETUP must be programmed with a minimum value of 2."]
     #[inline(always)]
-    #[must_use]
     pub fn sda_setup(&mut self) -> SDA_SETUP_W<IC_SDA_SETUP_SPEC> {
         SDA_SETUP_W::new(self, 0)
     }

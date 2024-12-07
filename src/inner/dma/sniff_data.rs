@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - Write an initial seed value here before starting a DMA transfer on the channel indicated by SNIFF_CTRL_DMACH. The hardware will update this register each time it observes a read from the indicated channel. Once the channel completes, the final result can be read from this register."]
     #[inline(always)]
-    #[must_use]
     pub fn sniff_data(&mut self) -> SNIFF_DATA_W<SNIFF_DATA_SPEC> {
         SNIFF_DATA_W::new(self, 0)
     }

@@ -37,7 +37,6 @@ impl R {
 impl W {
     #[doc = "Bit 10 - FIFO was written when full. Write 1 to clear."]
     #[inline(always)]
-    #[must_use]
     pub fn wof(&mut self) -> WOF_W<STAT_SPEC> {
         WOF_W::new(self, 10)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn seed(&mut self) -> SEED_W<RANDOM_SPEC> {
         SEED_W::new(self, 0)
     }

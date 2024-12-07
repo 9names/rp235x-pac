@@ -193,13 +193,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:1 - Selects the clock source glitchlessly, can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn src(&mut self) -> SRC_W<CLK_REF_CTRL_SPEC> {
         SRC_W::new(self, 0)
     }
     #[doc = "Bits 5:6 - Selects the auxiliary clock source, will glitch when switching"]
     #[inline(always)]
-    #[must_use]
     pub fn auxsrc(&mut self) -> AUXSRC_W<CLK_REF_CTRL_SPEC> {
         AUXSRC_W::new(self, 5)
     }

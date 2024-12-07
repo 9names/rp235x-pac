@@ -37,7 +37,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn vreg_output_low(&mut self) -> VREG_OUTPUT_LOW_W<INTR_SPEC> {
         VREG_OUTPUT_LOW_W::new(self, 0)
     }

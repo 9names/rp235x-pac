@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:23"]
     #[inline(always)]
-    #[must_use]
     pub fn interp0_accum0_add(&mut self) -> INTERP0_ACCUM0_ADD_W<INTERP0_ACCUM0_ADD_SPEC> {
         INTERP0_ACCUM0_ADD_W::new(self, 0)
     }

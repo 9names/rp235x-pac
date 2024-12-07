@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - This register updates automatically each time a read completes. The current value is the next address to be read by this channel."]
     #[inline(always)]
-    #[must_use]
     pub fn ch0_read_addr(&mut self) -> CH0_READ_ADDR_W<CH_READ_ADDR_SPEC> {
         CH0_READ_ADDR_W::new(self, 0)
     }

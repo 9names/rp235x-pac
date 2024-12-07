@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enables or disables the CTI"]
     #[inline(always)]
-    #[must_use]
     pub fn glben(&mut self) -> GLBEN_W<CTICONTROL_SPEC> {
         GLBEN_W::new(self, 0)
     }

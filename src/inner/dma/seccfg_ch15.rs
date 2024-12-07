@@ -34,19 +34,16 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Privileged channel. If 1, this channel performs Privileged bus accesses. If 0, it performs Unprivileged bus accesses. If 1, this channel is controllable only from a Privileged context of the same Secure/Non-secure level, or any context of a higher Secure/Non-secure level."]
     #[inline(always)]
-    #[must_use]
     pub fn p(&mut self) -> P_W<SECCFG_CH15_SPEC> {
         P_W::new(self, 0)
     }
     #[doc = "Bit 1 - Secure channel. If 1, this channel performs Secure bus accesses. If 0, it performs Non-secure bus accesses. If 1, this channel is controllable only from a Secure context."]
     #[inline(always)]
-    #[must_use]
     pub fn s(&mut self) -> S_W<SECCFG_CH15_SPEC> {
         S_W::new(self, 1)
     }
     #[doc = "Bit 2 - LOCK is 0 at reset, and is set to 1 automatically upon a successful write to this channel's control registers. That is, a write to CTRL, READ_ADDR, WRITE_ADDR, TRANS_COUNT and their aliases. Once its LOCK bit is set, this register becomes read-only. A failed write, for example due to the write's privilege being lower than that specified in the channel's SECCFG register, will not set the LOCK bit."]
     #[inline(always)]
-    #[must_use]
     pub fn lock(&mut self) -> LOCK_W<SECCFG_CH15_SPEC> {
         LOCK_W::new(self, 2)
     }

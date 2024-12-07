@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 16:17 - Integer part of clock divisor, 0 -> max+1, can be changed on-the-fly"]
     #[inline(always)]
-    #[must_use]
     pub fn int(&mut self) -> INT_W<CLK_PERI_DIV_SPEC> {
         INT_W::new(self, 16)
     }

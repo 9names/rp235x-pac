@@ -17,42 +17,36 @@ pub type QSPI_SD_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GPIO_W<GPIO_HI_OUT_CLR_SPEC> {
         GPIO_W::new(self, 0)
     }
     #[doc = "Bit 24"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dp(&mut self) -> USB_DP_W<GPIO_HI_OUT_CLR_SPEC> {
         USB_DP_W::new(self, 24)
     }
     #[doc = "Bit 25"]
     #[inline(always)]
-    #[must_use]
     pub fn usb_dm(&mut self) -> USB_DM_W<GPIO_HI_OUT_CLR_SPEC> {
         USB_DM_W::new(self, 25)
     }
     #[doc = "Bit 26"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sck(&mut self) -> QSPI_SCK_W<GPIO_HI_OUT_CLR_SPEC> {
         QSPI_SCK_W::new(self, 26)
     }
     #[doc = "Bit 27"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_csn(&mut self) -> QSPI_CSN_W<GPIO_HI_OUT_CLR_SPEC> {
         QSPI_CSN_W::new(self, 27)
     }
     #[doc = "Bits 28:31"]
     #[inline(always)]
-    #[must_use]
     pub fn qspi_sd(&mut self) -> QSPI_SD_W<GPIO_HI_OUT_CLR_SPEC> {
         QSPI_SD_W::new(self, 28)
     }
 }
-#[doc = "Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &amp;= ~wdata`  
+#[doc = "Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &= ~wdata`  
 
 You can [`read`](crate::Reg::read) this register and get [`gpio_hi_out_clr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`gpio_hi_out_clr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct GPIO_HI_OUT_CLR_SPEC;

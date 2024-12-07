@@ -7,7 +7,6 @@ pub type MULTI_CHAN_TRIGGER_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl W {
     #[doc = "Bits 0:15 - Each bit in this register corresponds to a DMA channel. Writing a 1 to the relevant bit is the same as writing to that channel's trigger register; the channel will start if it is currently enabled and not already busy."]
     #[inline(always)]
-    #[must_use]
     pub fn multi_chan_trigger(&mut self) -> MULTI_CHAN_TRIGGER_W<MULTI_CHAN_TRIGGER_SPEC> {
         MULTI_CHAN_TRIGGER_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - 8-bit low-power divisor value. These bits are cleared to 0 at reset."]
     #[inline(always)]
-    #[must_use]
     pub fn ilpdvsr(&mut self) -> ILPDVSR_W<UARTILPR_SPEC> {
         ILPDVSR_W::new(self, 0)
     }

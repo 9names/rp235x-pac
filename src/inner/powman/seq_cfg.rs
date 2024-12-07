@@ -100,49 +100,41 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Specifies the power state of SRAM1 when powering up swcore from a low power state (P1.xxx) to a high power state (P0.0xx). 0=power-up 1=no change"]
     #[inline(always)]
-    #[must_use]
     pub fn hw_pwrup_sram1(&mut self) -> HW_PWRUP_SRAM1_W<SEQ_CFG_SPEC> {
         HW_PWRUP_SRAM1_W::new(self, 0)
     }
     #[doc = "Bit 1 - Specifies the power state of SRAM0 when powering up swcore from a low power state (P1.xxx) to a high power state (P0.0xx). 0=power-up 1=no change"]
     #[inline(always)]
-    #[must_use]
     pub fn hw_pwrup_sram0(&mut self) -> HW_PWRUP_SRAM0_W<SEQ_CFG_SPEC> {
         HW_PWRUP_SRAM0_W::new(self, 1)
     }
     #[doc = "Bit 4 - Set to 0 to prevent automatic switching to vreg low power mode when switched-core is powered down This setting takes effect when the swcore is next powered down"]
     #[inline(always)]
-    #[must_use]
     pub fn use_vreg_lp(&mut self) -> USE_VREG_LP_W<SEQ_CFG_SPEC> {
         USE_VREG_LP_W::new(self, 4)
     }
     #[doc = "Bit 5 - Set to 0 to prevent automatic switching to vreg high power mode when switched-core is powered up This setting takes effect when the swcore is next powered up"]
     #[inline(always)]
-    #[must_use]
     pub fn use_vreg_hp(&mut self) -> USE_VREG_HP_W<SEQ_CFG_SPEC> {
         USE_VREG_HP_W::new(self, 5)
     }
     #[doc = "Bit 6 - Set to 0 to prevent automatic switching to bod low power mode when switched-core is powered down This setting takes effect when the swcore is next powered down"]
     #[inline(always)]
-    #[must_use]
     pub fn use_bod_lp(&mut self) -> USE_BOD_LP_W<SEQ_CFG_SPEC> {
         USE_BOD_LP_W::new(self, 6)
     }
     #[doc = "Bit 7 - Set to 0 to prevent automatic switching to bod high power mode when switched-core is powered up This setting takes effect when the swcore is next powered up"]
     #[inline(always)]
-    #[must_use]
     pub fn use_bod_hp(&mut self) -> USE_BOD_HP_W<SEQ_CFG_SPEC> {
         USE_BOD_HP_W::new(self, 7)
     }
     #[doc = "Bit 8 - Set to 0 to stop the low power osc when the switched-core is powered down, which is unwise if using it to clock the timer This setting takes effect when the swcore is next powered down"]
     #[inline(always)]
-    #[must_use]
     pub fn run_lposc_in_lp(&mut self) -> RUN_LPOSC_IN_LP_W<SEQ_CFG_SPEC> {
         RUN_LPOSC_IN_LP_W::new(self, 8)
     }
     #[doc = "Bit 12 - selects the reference clock (clk_ref) as the source of the POWMAN clock when switched-core is powered. The POWMAN clock always switches to the slow clock (lposc) when switched-core is powered down because the fast clock stops running. 0 always run the POWMAN clock from the slow clock (lposc) 1 run the POWMAN clock from the fast clock when available This setting takes effect when a power up sequence is next run"]
     #[inline(always)]
-    #[must_use]
     pub fn use_fast_powck(&mut self) -> USE_FAST_POWCK_W<SEQ_CFG_SPEC> {
         USE_FAST_POWCK_W::new(self, 12)
     }

@@ -127,13 +127,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive DMA Enable. This bit enables/disables the receive FIFO DMA channel. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn rdmae(&mut self) -> RDMAE_W<IC_DMA_CR_SPEC> {
         RDMAE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit DMA Enable. This bit enables/disables the transmit FIFO DMA channel. Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn tdmae(&mut self) -> TDMAE_W<IC_DMA_CR_SPEC> {
         TDMAE_W::new(self, 1)
     }

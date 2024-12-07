@@ -89,7 +89,7 @@ impl R {
     }
 }
 impl W {}
-#[doc = "Interrupt status after masking &amp; forcing for irq1  
+#[doc = "Interrupt status after masking & forcing for irq1  
 
 You can [`read`](crate::Reg::read) this register and get [`irq1_ints::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`irq1_ints::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct IRQ1_INTS_SPEC;

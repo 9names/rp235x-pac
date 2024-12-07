@@ -124,7 +124,7 @@ impl RegisterBlock {
     pub const fn gpio_out_clr(&self) -> &GPIO_OUT_CLR {
         &self.gpio_out_clr
     }
-    #[doc = "0x24 - Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &amp;= ~wdata`"]
+    #[doc = "0x24 - Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &= ~wdata`"]
     #[inline(always)]
     pub const fn gpio_hi_out_clr(&self) -> &GPIO_HI_OUT_CLR {
         &self.gpio_hi_out_clr
@@ -164,7 +164,7 @@ impl RegisterBlock {
     pub const fn gpio_oe_clr(&self) -> &GPIO_OE_CLR {
         &self.gpio_oe_clr
     }
-    #[doc = "0x44 - Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &amp;= ~wdata`"]
+    #[doc = "0x44 - Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &= ~wdata`"]
     #[inline(always)]
     pub const fn gpio_hi_oe_clr(&self) -> &GPIO_HI_OE_CLR {
         &self.gpio_hi_oe_clr
@@ -359,13 +359,13 @@ impl RegisterBlock {
     pub const fn interp1_base_1and0(&self) -> &INTERP1_BASE_1AND0 {
         &self.interp1_base_1and0
     }
-    #[doc = "0x100..0x180 - Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 &lt;&lt; lock number."]
+    #[doc = "0x100..0x180 - Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 << lock number."]
     #[inline(always)]
     pub const fn spinlock(&self, n: usize) -> &SPINLOCK {
         &self.spinlock[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x100..0x180 - Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 &lt;&lt; lock number."]
+    #[doc = "0x100..0x180 - Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 << lock number."]
     #[inline(always)]
     pub fn spinlock_iter(&self) -> impl Iterator<Item = &SPINLOCK> {
         self.spinlock.iter()
@@ -548,14 +548,14 @@ module"]
 pub type GPIO_OUT_CLR = crate::Reg<gpio_out_clr::GPIO_OUT_CLR_SPEC>;
 #[doc = "GPIO0...31 output value clear"]
 pub mod gpio_out_clr;
-#[doc = "GPIO_HI_OUT_CLR (rw) register accessor: Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &amp;= ~wdata`  
+#[doc = "GPIO_HI_OUT_CLR (rw) register accessor: Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &= ~wdata`  
 
 You can [`read`](crate::Reg::read) this register and get [`gpio_hi_out_clr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`gpio_hi_out_clr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@gpio_hi_out_clr`]
 module"]
 pub type GPIO_HI_OUT_CLR = crate::Reg<gpio_hi_out_clr::GPIO_HI_OUT_CLR_SPEC>;
-#[doc = "Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &amp;= ~wdata`"]
+#[doc = "Output value clear for GPIO32..47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OUT, i.e. `GPIO_HI_OUT &= ~wdata`"]
 pub mod gpio_hi_out_clr;
 #[doc = "GPIO_OUT_XOR (rw) register accessor: GPIO0...31 output value XOR  
 
@@ -620,14 +620,14 @@ module"]
 pub type GPIO_OE_CLR = crate::Reg<gpio_oe_clr::GPIO_OE_CLR_SPEC>;
 #[doc = "GPIO0...31 output enable clear"]
 pub mod gpio_oe_clr;
-#[doc = "GPIO_HI_OE_CLR (rw) register accessor: Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &amp;= ~wdata`  
+#[doc = "GPIO_HI_OE_CLR (rw) register accessor: Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &= ~wdata`  
 
 You can [`read`](crate::Reg::read) this register and get [`gpio_hi_oe_clr::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`gpio_hi_oe_clr::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@gpio_hi_oe_clr`]
 module"]
 pub type GPIO_HI_OE_CLR = crate::Reg<gpio_hi_oe_clr::GPIO_HI_OE_CLR_SPEC>;
-#[doc = "Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &amp;= ~wdata`"]
+#[doc = "Output enable clear for GPIO32...47, QSPI IOs and USB pins. Perform an atomic bit-clear on GPIO_HI_OE, i.e. `GPIO_HI_OE &= ~wdata`"]
 pub mod gpio_hi_oe_clr;
 #[doc = "GPIO_OE_XOR (rw) register accessor: GPIO0...31 output enable XOR  
 
@@ -971,14 +971,14 @@ module"]
 pub type INTERP1_BASE_1AND0 = crate::Reg<interp1_base_1and0::INTERP1_BASE_1AND0_SPEC>;
 #[doc = "On write, the lower 16 bits go to BASE0, upper bits to BASE1 simultaneously. Each half is sign-extended to 32 bits if that lane's SIGNED flag is set."]
 pub mod interp1_base_1and0;
-#[doc = "SPINLOCK (rw) register accessor: Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 &lt;&lt; lock number.  
+#[doc = "SPINLOCK (rw) register accessor: Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 << lock number.  
 
 You can [`read`](crate::Reg::read) this register and get [`spinlock::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spinlock::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@spinlock`]
 module"]
 pub type SPINLOCK = crate::Reg<spinlock::SPINLOCK_SPEC>;
-#[doc = "Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 &lt;&lt; lock number."]
+#[doc = "Reading from a spinlock address will: - Return 0 if lock is already locked - Otherwise return nonzero, and simultaneously claim the lock Writing (any value) releases the lock. If core 0 and core 1 attempt to claim the same lock simultaneously, core 0 wins. The value returned on success is 0x1 << lock number."]
 pub mod spinlock;
 #[doc = "DOORBELL_OUT_SET (rw) register accessor: Trigger a doorbell interrupt on the opposite core. Write 1 to a bit to set the corresponding bit in DOORBELL_IN on the opposite core. This raises the opposite core's doorbell interrupt. Read to get the status of the doorbells currently asserted on the opposite core. This is equivalent to that core reading its own DOORBELL_IN status.  
 

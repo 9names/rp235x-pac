@@ -52,31 +52,26 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Write 1 to lock the PROC0 bit of DEBUGEN. Can't be cleared once set."]
     #[inline(always)]
-    #[must_use]
     pub fn proc0(&mut self) -> PROC0_W<DEBUGEN_LOCK_SPEC> {
         PROC0_W::new(self, 0)
     }
     #[doc = "Bit 1 - Write 1 to lock the PROC0_SECURE bit of DEBUGEN. Can't be cleared once set."]
     #[inline(always)]
-    #[must_use]
     pub fn proc0_secure(&mut self) -> PROC0_SECURE_W<DEBUGEN_LOCK_SPEC> {
         PROC0_SECURE_W::new(self, 1)
     }
     #[doc = "Bit 2 - Write 1 to lock the PROC1 bit of DEBUGEN. Can't be cleared once set."]
     #[inline(always)]
-    #[must_use]
     pub fn proc1(&mut self) -> PROC1_W<DEBUGEN_LOCK_SPEC> {
         PROC1_W::new(self, 2)
     }
     #[doc = "Bit 3 - Write 1 to lock the PROC1_SECURE bit of DEBUGEN. Can't be cleared once set."]
     #[inline(always)]
-    #[must_use]
     pub fn proc1_secure(&mut self) -> PROC1_SECURE_W<DEBUGEN_LOCK_SPEC> {
         PROC1_SECURE_W::new(self, 3)
     }
     #[doc = "Bit 8 - Write 1 to lock the MISC bit of DEBUGEN. Can't be cleared once set."]
     #[inline(always)]
-    #[must_use]
     pub fn misc(&mut self) -> MISC_W<DEBUGEN_LOCK_SPEC> {
         MISC_W::new(self, 8)
     }

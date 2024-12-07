@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Fractional component of the XOSC frequency in kHz. This field must only be written when POWMAN_TIMER_RUN=0 or POWMAN_TIMER_USING_XOSC=0"]
     #[inline(always)]
-    #[must_use]
     pub fn xosc_freq_khz_frac(&mut self) -> XOSC_FREQ_KHZ_FRAC_W<XOSC_FREQ_KHZ_FRAC_SPEC> {
         XOSC_FREQ_KHZ_FRAC_W::new(self, 0)
     }

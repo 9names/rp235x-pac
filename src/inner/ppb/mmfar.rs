@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - This register is updated with the address of a location that produced a MemManage fault. The MMFSR shows the cause of the fault, and whether this field is valid. This field is valid only when MMFSR.MMARVALID is set, otherwise it is UNKNOWN"]
     #[inline(always)]
-    #[must_use]
     pub fn address(&mut self) -> ADDRESS_W<MMFAR_SPEC> {
         ADDRESS_W::new(self, 0)
     }

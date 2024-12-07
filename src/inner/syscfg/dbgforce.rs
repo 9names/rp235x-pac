@@ -41,19 +41,16 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Directly drive SWDIO input, if ATTACH is set"]
     #[inline(always)]
-    #[must_use]
     pub fn swdi(&mut self) -> SWDI_W<DBGFORCE_SPEC> {
         SWDI_W::new(self, 1)
     }
     #[doc = "Bit 2 - Directly drive SWCLK, if ATTACH is set"]
     #[inline(always)]
-    #[must_use]
     pub fn swclk(&mut self) -> SWCLK_W<DBGFORCE_SPEC> {
         SWCLK_W::new(self, 2)
     }
     #[doc = "Bit 3 - Attach chip debug port to syscfg controls, and disconnect it from external SWD pads."]
     #[inline(always)]
-    #[must_use]
     pub fn attach(&mut self) -> ATTACH_W<DBGFORCE_SPEC> {
         ATTACH_W::new(self, 3)
     }

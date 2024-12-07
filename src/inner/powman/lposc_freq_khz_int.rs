@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:5 - Integer component of the LPOSC or GPIO clock source frequency in kHz. Default = 32 This field must only be written when POWMAN_TIMER_RUN=0 or POWMAN_TIMER_USING_XOSC=1"]
     #[inline(always)]
-    #[must_use]
     pub fn lposc_freq_khz_int(&mut self) -> LPOSC_FREQ_KHZ_INT_W<LPOSC_FREQ_KHZ_INT_SPEC> {
         LPOSC_FREQ_KHZ_INT_W::new(self, 0)
     }

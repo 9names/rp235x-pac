@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Clock prescale divisor. Must be an even number from 2-254, depending on the frequency of SSPCLK. The least significant bit always returns zero on reads."]
     #[inline(always)]
-    #[must_use]
     pub fn cpsdvsr(&mut self) -> CPSDVSR_W<SSPCPSR_SPEC> {
         CPSDVSR_W::new(self, 0)
     }

@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - When powman resets the RSM, the current value of BOOTDIS_NEXT is OR'd into BOOTDIS_NOW, and BOOTDIS_NEXT is cleared. The bootrom checks this flag before reading the BOOT0..3 registers. If it is set, the bootrom clears it, and ignores the BOOT registers. This prevents Secure software from diverting the boot path before a bootloader has had the chance to soft lock OTP pages containing sensitive data."]
     #[inline(always)]
-    #[must_use]
     pub fn now(&mut self) -> NOW_W<BOOTDIS_SPEC> {
         NOW_W::new(self, 0)
     }
     #[doc = "Bit 1 - This flag always ORs writes into its current contents. It can be set but not cleared by software. The BOOTDIS_NEXT bit is OR'd into the BOOTDIS_NOW bit when the core is powered down. Simultaneously, the BOOTDIS_NEXT bit is cleared. Setting this bit means that the BOOT0..3 registers will be ignored following the next reset of the RSM by powman. This flag should be set by an early boot stage that has soft-locked OTP pages, to prevent later stages from unlocking it by power cycling."]
     #[inline(always)]
-    #[must_use]
     pub fn next(&mut self) -> NEXT_W<BOOTDIS_SPEC> {
         NEXT_W::new(self, 1)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:8 - Indicates the interrupt to be pended. The value written is (ExceptionNumber - 16)"]
     #[inline(always)]
-    #[must_use]
     pub fn intid(&mut self) -> INTID_W<STIR_SPEC> {
         INTID_W::new(self, 0)
     }

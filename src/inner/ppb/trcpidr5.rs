@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn trcpidr5(&mut self) -> TRCPIDR5_W<TRCPIDR5_SPEC> {
         TRCPIDR5_W::new(self, 0)
     }

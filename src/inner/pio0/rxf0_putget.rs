@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn rxf0_putget0(&mut self) -> RXF0_PUTGET0_W<RXF0_PUTGET_SPEC> {
         RXF0_PUTGET0_W::new(self, 0)
     }

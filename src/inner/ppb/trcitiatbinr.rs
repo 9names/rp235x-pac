@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Integration Mode instruction ATREADYM in"]
     #[inline(always)]
-    #[must_use]
     pub fn atreadym(&mut self) -> ATREADYM_W<TRCITIATBINR_SPEC> {
         ATREADYM_W::new(self, 0)
     }
     #[doc = "Bit 1 - Integration Mode instruction AFVALIDM in"]
     #[inline(always)]
-    #[must_use]
     pub fn afvalidm(&mut self) -> AFVALIDM_W<TRCITIATBINR_SPEC> {
         AFVALIDM_W::new(self, 1)
     }

@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - A write to this bit gives the value of ATVALID"]
     #[inline(always)]
-    #[must_use]
     pub fn atready(&mut self) -> ATREADY_W<INT_ATVALID_SPEC> {
         ATREADY_W::new(self, 0)
     }
     #[doc = "Bit 1 - A write to this bit gives the value of AFREADY"]
     #[inline(always)]
-    #[must_use]
     pub fn afready(&mut self) -> AFREADY_W<INT_ATVALID_SPEC> {
         AFREADY_W::new(self, 1)
     }

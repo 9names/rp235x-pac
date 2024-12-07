@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn trcdevid(&mut self) -> TRCDEVID_W<TRCDEVID_SPEC> {
         TRCDEVID_W::new(self, 0)
     }

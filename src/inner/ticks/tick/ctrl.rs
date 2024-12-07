@@ -23,7 +23,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - start / stop tick generation"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<CTRL_SPEC> {
         ENABLE_W::new(self, 0)
     }

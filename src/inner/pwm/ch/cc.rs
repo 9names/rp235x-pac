@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn a(&mut self) -> A_W<CC_SPEC> {
         A_W::new(self, 0)
     }
     #[doc = "Bits 16:31"]
     #[inline(always)]
-    #[must_use]
     pub fn b(&mut self) -> B_W<CC_SPEC> {
         B_W::new(self, 16)
     }

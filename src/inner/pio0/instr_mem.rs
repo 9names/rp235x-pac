@@ -7,7 +7,6 @@ pub type INSTR_MEM0_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn instr_mem0(&mut self) -> INSTR_MEM0_W<INSTR_MEM_SPEC> {
         INSTR_MEM0_W::new(self, 0)
     }

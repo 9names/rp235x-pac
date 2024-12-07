@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Memory attribute encoding for MPU regions with an AttrIndex of 0"]
     #[inline(always)]
-    #[must_use]
     pub fn attr0(&mut self) -> ATTR0_W<MPU_MAIR0_SPEC> {
         ATTR0_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - Memory attribute encoding for MPU regions with an AttrIndex of 1"]
     #[inline(always)]
-    #[must_use]
     pub fn attr1(&mut self) -> ATTR1_W<MPU_MAIR0_SPEC> {
         ATTR1_W::new(self, 8)
     }
     #[doc = "Bits 16:23 - Memory attribute encoding for MPU regions with an AttrIndex of 2"]
     #[inline(always)]
-    #[must_use]
     pub fn attr2(&mut self) -> ATTR2_W<MPU_MAIR0_SPEC> {
         ATTR2_W::new(self, 16)
     }
     #[doc = "Bits 24:31 - Memory attribute encoding for MPU regions with an AttrIndex of 3"]
     #[inline(always)]
-    #[must_use]
     pub fn attr3(&mut self) -> ATTR3_W<MPU_MAIR0_SPEC> {
         ATTR3_W::new(self, 24)
     }

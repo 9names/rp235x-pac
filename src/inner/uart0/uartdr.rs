@@ -46,7 +46,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:7 - Receive (read) data character. Transmit (write) data character."]
     #[inline(always)]
-    #[must_use]
     pub fn data(&mut self) -> DATA_W<UARTDR_SPEC> {
         DATA_W::new(self, 0)
     }

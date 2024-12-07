@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn pause(&mut self) -> PAUSE_W<PAUSE_SPEC> {
         PAUSE_W::new(self, 0)
     }

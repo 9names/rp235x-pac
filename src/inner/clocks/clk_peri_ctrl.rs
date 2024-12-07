@@ -164,19 +164,16 @@ impl R {
 impl W {
     #[doc = "Bits 5:7 - Selects the auxiliary clock source, will glitch when switching"]
     #[inline(always)]
-    #[must_use]
     pub fn auxsrc(&mut self) -> AUXSRC_W<CLK_PERI_CTRL_SPEC> {
         AUXSRC_W::new(self, 5)
     }
     #[doc = "Bit 10 - Asynchronously kills the clock generator, enable must be set low before deasserting kill"]
     #[inline(always)]
-    #[must_use]
     pub fn kill(&mut self) -> KILL_W<CLK_PERI_CTRL_SPEC> {
         KILL_W::new(self, 10)
     }
     #[doc = "Bit 11 - Starts and stops the clock generator cleanly"]
     #[inline(always)]
-    #[must_use]
     pub fn enable(&mut self) -> ENABLE_W<CLK_PERI_CTRL_SPEC> {
         ENABLE_W::new(self, 11)
     }

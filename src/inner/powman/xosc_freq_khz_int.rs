@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - Integer component of the XOSC frequency in kHz. Default = 12000 Must be >1 This field must only be written when POWMAN_TIMER_RUN=0 or POWMAN_TIMER_USING_XOSC=0"]
     #[inline(always)]
-    #[must_use]
     pub fn xosc_freq_khz_int(&mut self) -> XOSC_FREQ_KHZ_INT_W<XOSC_FREQ_KHZ_INT_SPEC> {
         XOSC_FREQ_KHZ_INT_W::new(self, 0)
     }

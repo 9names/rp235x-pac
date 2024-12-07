@@ -37,7 +37,6 @@ impl R {
 impl W {
     #[doc = "Bit 24 - An invalid value has been written to CTRL_ENABLE or CTRL_FREQ_RANGE or FREQA or FREQB or DIV or PHASE or DORMANT"]
     #[inline(always)]
-    #[must_use]
     pub fn badwrite(&mut self) -> BADWRITE_W<STATUS_SPEC> {
         BADWRITE_W::new(self, 24)
     }

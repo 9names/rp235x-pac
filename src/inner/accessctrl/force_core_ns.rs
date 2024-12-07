@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn core1(&mut self) -> CORE1_W<FORCE_CORE_NS_SPEC> {
         CORE1_W::new(self, 1)
     }

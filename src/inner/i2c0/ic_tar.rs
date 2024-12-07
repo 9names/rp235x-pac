@@ -136,19 +136,16 @@ impl R {
 impl W {
     #[doc = "Bits 0:9 - This is the target address for any master transaction. When transmitting a General Call, these bits are ignored. To generate a START BYTE, the CPU needs to write only once into these bits. If the IC_TAR and IC_SAR are the same, loopback exists but the FIFOs are shared between master and slave, so full loopback is not feasible. Only one direction loopback mode is supported (simplex), not duplex. A master cannot transmit to itself; it can transmit to only a slave."]
     #[inline(always)]
-    #[must_use]
     pub fn ic_tar(&mut self) -> IC_TAR_W<IC_TAR_SPEC> {
         IC_TAR_W::new(self, 0)
     }
     #[doc = "Bit 10 - If bit 11 (SPECIAL) is set to 1 and bit 13(Device-ID) is set to 0, then this bit indicates whether a General Call or START byte command is to be performed by the DW_apb_i2c. - 0: General Call Address - after issuing a General Call, only writes may be performed. Attempting to issue a read command results in setting bit 6 (TX_ABRT) of the IC_RAW_INTR_STAT register. The DW_apb_i2c remains in General Call mode until the SPECIAL bit value (bit 11) is cleared. - 1: START BYTE Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn gc_or_start(&mut self) -> GC_OR_START_W<IC_TAR_SPEC> {
         GC_OR_START_W::new(self, 10)
     }
     #[doc = "Bit 11 - This bit indicates whether software performs a Device-ID or General Call or START BYTE command. - 0: ignore bit 10 GC_OR_START and use IC_TAR normally - 1: perform special I2C command as specified in Device_ID or GC_OR_START bit Reset value: 0x0"]
     #[inline(always)]
-    #[must_use]
     pub fn special(&mut self) -> SPECIAL_W<IC_TAR_SPEC> {
         SPECIAL_W::new(self, 11)
     }

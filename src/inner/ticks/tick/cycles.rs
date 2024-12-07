@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:8 - Total number of clk_tick cycles before the next tick."]
     #[inline(always)]
-    #[must_use]
     pub fn proc0_cycles(&mut self) -> PROC0_CYCLES_W<CYCLES_SPEC> {
         PROC0_CYCLES_W::new(self, 0)
     }

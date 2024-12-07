@@ -61,7 +61,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15 - set to 0xaa00 + div where div = 0 divides by 128 div = 1-127 divides by div any other value sets div=128 this register resets to div=32"]
     #[inline(always)]
-    #[must_use]
     pub fn div(&mut self) -> DIV_W<DIV_SPEC> {
         DIV_W::new(self, 0)
     }

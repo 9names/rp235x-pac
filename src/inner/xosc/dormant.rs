@@ -74,7 +74,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31 - This is used to save power by pausing the XOSC On power-up this field is initialised to WAKE An invalid write will also select WAKE Warning: stop the PLLs before selecting dormant mode Warning: setup the irq before selecting dormant mode"]
     #[inline(always)]
-    #[must_use]
     pub fn dormant(&mut self) -> DORMANT_W<DORMANT_SPEC> {
         DORMANT_W::new(self, 0)
     }

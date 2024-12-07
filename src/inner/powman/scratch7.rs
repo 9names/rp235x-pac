@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn scratch7(&mut self) -> SCRATCH7_W<SCRATCH7_SPEC> {
         SCRATCH7_W::new(self, 0)
     }

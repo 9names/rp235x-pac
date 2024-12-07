@@ -119,43 +119,36 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable direct mode. In direct mode, software controls the chip select lines, and can perform direct SPI transfers by pushing data to the DIRECT_TX FIFO, and popping the same amount of data from the DIRECT_RX FIFO. Memory-mapped accesses will generate bus errors when direct serial mode is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn en(&mut self) -> EN_W<DIRECT_CSR_SPEC> {
         EN_W::new(self, 0)
     }
     #[doc = "Bit 2 - When 1, assert (i.e. drive low) the CS0n chip select line. Note that this applies even when DIRECT_CSR_EN is 0."]
     #[inline(always)]
-    #[must_use]
     pub fn assert_cs0n(&mut self) -> ASSERT_CS0N_W<DIRECT_CSR_SPEC> {
         ASSERT_CS0N_W::new(self, 2)
     }
     #[doc = "Bit 3 - When 1, assert (i.e. drive low) the CS1n chip select line. Note that this applies even when DIRECT_CSR_EN is 0."]
     #[inline(always)]
-    #[must_use]
     pub fn assert_cs1n(&mut self) -> ASSERT_CS1N_W<DIRECT_CSR_SPEC> {
         ASSERT_CS1N_W::new(self, 3)
     }
     #[doc = "Bit 6 - When 1, automatically assert the CS0n chip select line whenever the BUSY flag is set."]
     #[inline(always)]
-    #[must_use]
     pub fn auto_cs0n(&mut self) -> AUTO_CS0N_W<DIRECT_CSR_SPEC> {
         AUTO_CS0N_W::new(self, 6)
     }
     #[doc = "Bit 7 - When 1, automatically assert the CS1n chip select line whenever the BUSY flag is set."]
     #[inline(always)]
-    #[must_use]
     pub fn auto_cs1n(&mut self) -> AUTO_CS1N_W<DIRECT_CSR_SPEC> {
         AUTO_CS1N_W::new(self, 7)
     }
     #[doc = "Bits 22:29 - Clock divisor for direct serial mode. Divisors of 1..255 are encoded directly, and the maximum divisor of 256 is encoded by a value of CLKDIV=0. The clock divisor can be changed on-the-fly by software, without halting or otherwise coordinating with the serial interface. The serial interface will sample the latest clock divisor each time it begins the transmission of a new byte."]
     #[inline(always)]
-    #[must_use]
     pub fn clkdiv(&mut self) -> CLKDIV_W<DIRECT_CSR_SPEC> {
         CLKDIV_W::new(self, 22)
     }
     #[doc = "Bits 30:31 - Delay the read data sample timing, in units of one half of a system clock cycle. (Not necessarily half of an SCK cycle.)"]
     #[inline(always)]
-    #[must_use]
     pub fn rxdelay(&mut self) -> RXDELAY_W<DIRECT_CSR_SPEC> {
         RXDELAY_W::new(self, 30)
     }

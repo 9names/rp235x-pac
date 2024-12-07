@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For CLRENA\\[m\\]
 in NVIC_ICER*n, indicates whether interrupt 32*n + m is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn clrena(&mut self) -> CLRENA_W<NVIC_ICER1_SPEC> {
         CLRENA_W::new(self, 0)
     }

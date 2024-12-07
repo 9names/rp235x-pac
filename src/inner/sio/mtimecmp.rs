@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn mtimecmp(&mut self) -> MTIMECMP_W<MTIMECMP_SPEC> {
         MTIMECMP_W::new(self, 0)
     }

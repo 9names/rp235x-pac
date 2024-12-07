@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 12 - isolates the brown-out detection control interface 0 - not isolated (default) 1 - isolated"]
     #[inline(always)]
-    #[must_use]
     pub fn isolate(&mut self) -> ISOLATE_W<BOD_CTRL_SPEC> {
         ISOLATE_W::new(self, 12)
     }

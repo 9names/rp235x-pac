@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:6 - Trace ID"]
     #[inline(always)]
-    #[must_use]
     pub fn id(&mut self) -> ID_W<TRCITATBIDR_SPEC> {
         ID_W::new(self, 0)
     }

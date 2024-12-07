@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Writing any value to this address will reset the bits counter and RNG valid registers. RND_SORCE_ENABLE register must be unset in order for the reset to take place."]
     #[inline(always)]
-    #[must_use]
     pub fn rst_bits_counter(&mut self) -> RST_BITS_COUNTER_W<RST_BITS_COUNTER_SPEC> {
         RST_BITS_COUNTER_W::new(self, 0)
     }

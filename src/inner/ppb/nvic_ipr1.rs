@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bits 4:7 - For register NVIC_IPRn, the priority of interrupt number 4*n+0, or RES0 if the PE does not implement this interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_n0(&mut self) -> PRI_N0_W<NVIC_IPR1_SPEC> {
         PRI_N0_W::new(self, 4)
     }
     #[doc = "Bits 12:15 - For register NVIC_IPRn, the priority of interrupt number 4*n+1, or RES0 if the PE does not implement this interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_n1(&mut self) -> PRI_N1_W<NVIC_IPR1_SPEC> {
         PRI_N1_W::new(self, 12)
     }
     #[doc = "Bits 20:23 - For register NVIC_IPRn, the priority of interrupt number 4*n+2, or RES0 if the PE does not implement this interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_n2(&mut self) -> PRI_N2_W<NVIC_IPR1_SPEC> {
         PRI_N2_W::new(self, 20)
     }
     #[doc = "Bits 28:31 - For register NVIC_IPRn, the priority of interrupt number 4*n+3, or RES0 if the PE does not implement this interrupt"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_n3(&mut self) -> PRI_N3_W<NVIC_IPR1_SPEC> {
         PRI_N3_W::new(self, 28)
     }

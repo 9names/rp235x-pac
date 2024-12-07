@@ -88,25 +88,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Device - register the received data to account for hub bit dribble before EOP. Only affects certain hubs."]
     #[inline(always)]
-    #[must_use]
     pub fn rcv_delay(&mut self) -> RCV_DELAY_W<LINESTATE_TUNING_SPEC> {
         RCV_DELAY_W::new(self, 0)
     }
     #[doc = "Bit 1 - Device/Host - add an extra 1-bit debounce of linestate sampling."]
     #[inline(always)]
-    #[must_use]
     pub fn linestate_delay(&mut self) -> LINESTATE_DELAY_W<LINESTATE_TUNING_SPEC> {
         LINESTATE_DELAY_W::new(self, 1)
     }
     #[doc = "Bit 2 - Host - increase inter-packet and turnaround timeouts to accommodate worst-case hub delays."]
     #[inline(always)]
-    #[must_use]
     pub fn multi_hub_fix(&mut self) -> MULTI_HUB_FIX_W<LINESTATE_TUNING_SPEC> {
         MULTI_HUB_FIX_W::new(self, 2)
     }
     #[doc = "Bit 3 - Device - the controller FSM performs two reads of the buffer status memory address to avoid sampling metastable data. An enabled buffer is only used if both reads match."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_buff_control_double_read_fix(
         &mut self,
     ) -> DEV_BUFF_CONTROL_DOUBLE_READ_FIX_W<LINESTATE_TUNING_SPEC> {
@@ -114,31 +110,26 @@ impl W {
     }
     #[doc = "Bit 4 - RX - when a bitstuff error is signalled by rx_dasm, unconditionally terminate RX decode to avoid a hang during certain packet phases."]
     #[inline(always)]
-    #[must_use]
     pub fn sie_rx_bitstuff_fix(&mut self) -> SIE_RX_BITSTUFF_FIX_W<LINESTATE_TUNING_SPEC> {
         SIE_RX_BITSTUFF_FIX_W::new(self, 4)
     }
     #[doc = "Bit 5 - RX - when recovering from line chatter or bitstuff errors, treat SE0 as the end of chatter as well as 8 consecutive idle bits."]
     #[inline(always)]
-    #[must_use]
     pub fn sie_rx_chatter_se0_fix(&mut self) -> SIE_RX_CHATTER_SE0_FIX_W<LINESTATE_TUNING_SPEC> {
         SIE_RX_CHATTER_SE0_FIX_W::new(self, 5)
     }
     #[doc = "Bit 6 - Device - suppress repeated errors until the device FSM is next in the process of decoding an inbound packet."]
     #[inline(always)]
-    #[must_use]
     pub fn dev_rx_err_quiesce(&mut self) -> DEV_RX_ERR_QUIESCE_W<LINESTATE_TUNING_SPEC> {
         DEV_RX_ERR_QUIESCE_W::new(self, 6)
     }
     #[doc = "Bit 7 - Device - exit suspend on any non-idle signalling, not qualified with a 1ms timer"]
     #[inline(always)]
-    #[must_use]
     pub fn dev_ls_wake_fix(&mut self) -> DEV_LS_WAKE_FIX_W<LINESTATE_TUNING_SPEC> {
         DEV_LS_WAKE_FIX_W::new(self, 7)
     }
     #[doc = "Bits 8:11"]
     #[inline(always)]
-    #[must_use]
     pub fn spare_fix(&mut self) -> SPARE_FIX_W<LINESTATE_TUNING_SPEC> {
         SPARE_FIX_W::new(self, 8)
     }

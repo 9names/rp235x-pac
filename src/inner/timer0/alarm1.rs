@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn alarm1(&mut self) -> ALARM1_W<ALARM1_SPEC> {
         ALARM1_W::new(self, 0)
     }

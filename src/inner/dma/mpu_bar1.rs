@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 5:31 - This MPU region matches addresses where addr\\[31:5\\]
 (the 27 most significant bits) are greater than or equal to BAR_ADDR, and less than or equal to LAR_ADDR. Readable from any Privileged context, if and only if this region's S bit is clear, and MPU_CTRL_NS_HIDE_ADDR is clear. Otherwise readable only from a Secure, Privileged context."]
     #[inline(always)]
-    #[must_use]
     pub fn addr(&mut self) -> ADDR_W<MPU_BAR1_SPEC> {
         ADDR_W::new(self, 5)
     }

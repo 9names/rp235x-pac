@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio(&mut self) -> GPIO_W<PROC_IN_SYNC_BYPASS_SPEC> {
         GPIO_W::new(self, 0)
     }

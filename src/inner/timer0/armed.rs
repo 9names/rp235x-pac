@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:3"]
     #[inline(always)]
-    #[must_use]
     pub fn armed(&mut self) -> ARMED_W<ARMED_SPEC> {
         ARMED_W::new(self, 0)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:31"]
     #[inline(always)]
-    #[must_use]
     pub fn ch0_al1_trans_count_trig(
         &mut self,
     ) -> CH0_AL1_TRANS_COUNT_TRIG_W<CH_AL1_TRANS_COUNT_TRIG_SPEC> {

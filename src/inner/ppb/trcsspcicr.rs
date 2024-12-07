@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:3 - Selects one or more PE comparator inputs for Single-shot control. TRCIDR4.NUMPC defines the size of the PC field. 1 bit is provided for each implemented PE comparator input. For example, if bit\\[1\\]
 == 1 this selects PE comparator input 1 for Single-shot control"]
     #[inline(always)]
-    #[must_use]
     pub fn pc(&mut self) -> PC_W<TRCSSPCICR_SPEC> {
         PC_W::new(self, 0)
     }

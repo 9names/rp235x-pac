@@ -41,19 +41,16 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn core0(&mut self) -> CORE0_W<LOCK_SPEC> {
         CORE0_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn core1(&mut self) -> CORE1_W<LOCK_SPEC> {
         CORE1_W::new(self, 1)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    #[must_use]
     pub fn debug(&mut self) -> DEBUG_W<LOCK_SPEC> {
         DEBUG_W::new(self, 3)
     }

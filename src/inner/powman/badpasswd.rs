@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn badpasswd(&mut self) -> BADPASSWD_W<BADPASSWD_SPEC> {
         BADPASSWD_W::new(self, 0)
     }

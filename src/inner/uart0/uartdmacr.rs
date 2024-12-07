@@ -34,19 +34,16 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Receive DMA enable. If this bit is set to 1, DMA for the receive FIFO is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn rxdmae(&mut self) -> RXDMAE_W<UARTDMACR_SPEC> {
         RXDMAE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit DMA enable. If this bit is set to 1, DMA for the transmit FIFO is enabled."]
     #[inline(always)]
-    #[must_use]
     pub fn txdmae(&mut self) -> TXDMAE_W<UARTDMACR_SPEC> {
         TXDMAE_W::new(self, 1)
     }
     #[doc = "Bit 2 - DMA on error. If this bit is set to 1, the DMA receive request outputs, UARTRXDMASREQ or UARTRXDMABREQ, are disabled when the UART error interrupt is asserted."]
     #[inline(always)]
-    #[must_use]
     pub fn dmaonerr(&mut self) -> DMAONERR_W<UARTDMACR_SPEC> {
         DMAONERR_W::new(self, 2)
     }

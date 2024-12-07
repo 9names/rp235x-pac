@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn clk_sys_resus(&mut self) -> CLK_SYS_RESUS_W<INTF_SPEC> {
         CLK_SYS_RESUS_W::new(self, 0)
     }

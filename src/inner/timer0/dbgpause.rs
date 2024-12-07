@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 1 - Pause when processor 0 is in debug mode"]
     #[inline(always)]
-    #[must_use]
     pub fn dbg0(&mut self) -> DBG0_W<DBGPAUSE_SPEC> {
         DBG0_W::new(self, 1)
     }
     #[doc = "Bit 2 - Pause when processor 1 is in debug mode"]
     #[inline(always)]
-    #[must_use]
     pub fn dbg1(&mut self) -> DBG1_W<DBGPAUSE_SPEC> {
         DBG1_W::new(self, 2)
     }

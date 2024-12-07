@@ -932,7 +932,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:6 - Select an event for PERFCTR3. For each downstream port of the main crossbar, four events are available: ACCESS, an access took place; ACCESS_CONTESTED, an access took place that previously stalled due to contention from other masters; STALL_DOWNSTREAM, count cycles where any master stalled due to a stall on the downstream bus; STALL_UPSTREAM, count cycles where any master stalled for any reason, including contention from other masters."]
     #[inline(always)]
-    #[must_use]
     pub fn perfsel3(&mut self) -> PERFSEL3_W<PERFSEL3_SPEC> {
         PERFSEL3_W::new(self, 0)
     }

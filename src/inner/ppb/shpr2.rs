@@ -37,7 +37,6 @@ impl R {
 impl W {
     #[doc = "Bits 29:31 - Priority of system handler 11, SecureFault"]
     #[inline(always)]
-    #[must_use]
     pub fn pri_11_3(&mut self) -> PRI_11_3_W<SHPR2_SPEC> {
         PRI_11_3_W::new(self, 29)
     }

@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:24"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_max_khz(&mut self) -> FC0_MAX_KHZ_W<FC0_MAX_KHZ_SPEC> {
         FC0_MAX_KHZ_W::new(self, 0)
     }

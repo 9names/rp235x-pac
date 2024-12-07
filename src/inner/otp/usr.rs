@@ -25,13 +25,11 @@ impl R {
 impl W {
     #[doc = "Bit 0 - 1 enables USER interface; 0 disables USER interface (enables SBPI). This bit must be cleared before performing any SBPI access, such as when programming the OTP. The APB data read interface (USER interface) will be inaccessible during this time, and will return a bus error if any read is attempted."]
     #[inline(always)]
-    #[must_use]
     pub fn dctrl(&mut self) -> DCTRL_W<USR_SPEC> {
         DCTRL_W::new(self, 0)
     }
     #[doc = "Bit 4 - Power-down; 1 disables current reference. Must be 0 to read data from the OTP."]
     #[inline(always)]
-    #[must_use]
     pub fn pd(&mut self) -> PD_W<USR_SPEC> {
         PD_W::new(self, 4)
     }

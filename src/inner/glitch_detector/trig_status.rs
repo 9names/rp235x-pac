@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn det0(&mut self) -> DET0_W<TRIG_STATUS_SPEC> {
         DET0_W::new(self, 0)
     }
     #[doc = "Bit 1"]
     #[inline(always)]
-    #[must_use]
     pub fn det1(&mut self) -> DET1_W<TRIG_STATUS_SPEC> {
         DET1_W::new(self, 1)
     }
     #[doc = "Bit 2"]
     #[inline(always)]
-    #[must_use]
     pub fn det2(&mut self) -> DET2_W<TRIG_STATUS_SPEC> {
         DET2_W::new(self, 2)
     }
     #[doc = "Bit 3"]
     #[inline(always)]
-    #[must_use]
     pub fn det3(&mut self) -> DET3_W<TRIG_STATUS_SPEC> {
         DET3_W::new(self, 3)
     }

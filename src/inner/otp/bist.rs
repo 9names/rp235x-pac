@@ -41,19 +41,16 @@ impl R {
 impl W {
     #[doc = "Bits 16:27 - The cnt_fail flag will be set if the number of leaky locations exceeds this number"]
     #[inline(always)]
-    #[must_use]
     pub fn cnt_max(&mut self) -> CNT_MAX_W<BIST_SPEC> {
         CNT_MAX_W::new(self, 16)
     }
     #[doc = "Bit 28 - Enable the counter before the BIST function is initiated"]
     #[inline(always)]
-    #[must_use]
     pub fn cnt_ena(&mut self) -> CNT_ENA_W<BIST_SPEC> {
         CNT_ENA_W::new(self, 28)
     }
     #[doc = "Bit 29 - Clear counter before use"]
     #[inline(always)]
-    #[must_use]
     pub fn cnt_clr(&mut self) -> CNT_CLR_W<BIST_SPEC> {
         CNT_CLR_W::new(self, 29)
     }

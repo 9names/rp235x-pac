@@ -34,19 +34,16 @@ impl R {
 impl W {
     #[doc = "Bits 0:3 - timing between the swcore power state machine steps measured in units of the lposc period, 0 gives a delay of 1 unit"]
     #[inline(always)]
-    #[must_use]
     pub fn swcore_step(&mut self) -> SWCORE_STEP_W<POW_DELAY_SPEC> {
         SWCORE_STEP_W::new(self, 0)
     }
     #[doc = "Bits 4:7 - timing between the xip power state machine steps measured in units of the lposc period, 0 gives a delay of 1 unit"]
     #[inline(always)]
-    #[must_use]
     pub fn xip_step(&mut self) -> XIP_STEP_W<POW_DELAY_SPEC> {
         XIP_STEP_W::new(self, 4)
     }
     #[doc = "Bits 8:15 - timing between the sram0 and sram1 power state machine steps measured in units of the powman tick period (>=1us), 0 gives a delay of 1 unit"]
     #[inline(always)]
-    #[must_use]
     pub fn sram_step(&mut self) -> SRAM_STEP_W<POW_DELAY_SPEC> {
         SRAM_STEP_W::new(self, 8)
     }

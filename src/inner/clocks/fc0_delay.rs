@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:2"]
     #[inline(always)]
-    #[must_use]
     pub fn fc0_delay(&mut self) -> FC0_DELAY_W<FC0_DELAY_SPEC> {
         FC0_DELAY_W::new(self, 0)
     }

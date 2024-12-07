@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:2 - Indicates the memory region accessed by MPU_RBAR and MPU_RLAR"]
     #[inline(always)]
-    #[must_use]
     pub fn region(&mut self) -> REGION_W<MPU_RNR_SPEC> {
         REGION_W::new(self, 0)
     }

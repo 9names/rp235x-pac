@@ -7,7 +7,6 @@ pub type IRQ_FORCE_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl W {
     #[doc = "Bits 0:7"]
     #[inline(always)]
-    #[must_use]
     pub fn irq_force(&mut self) -> IRQ_FORCE_W<IRQ_FORCE_SPEC> {
         IRQ_FORCE_W::new(self, 0)
     }

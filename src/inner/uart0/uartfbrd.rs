@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:5 - The fractional baud rate divisor. These bits are cleared to 0 on reset."]
     #[inline(always)]
-    #[must_use]
     pub fn baud_divfrac(&mut self) -> BAUD_DIVFRAC_W<UARTFBRD_SPEC> {
         BAUD_DIVFRAC_W::new(self, 0)
     }

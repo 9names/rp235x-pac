@@ -16,7 +16,6 @@ impl R {
 impl W {
     #[doc = "Bits 0:15"]
     #[inline(always)]
-    #[must_use]
     pub fn sm0_instr(&mut self) -> SM0_INSTR_W<SM_INSTR_SPEC> {
         SM0_INSTR_W::new(self, 0)
     }

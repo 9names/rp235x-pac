@@ -67,7 +67,6 @@ impl R {
 impl W {
     #[doc = "Bit 0"]
     #[inline(always)]
-    #[must_use]
     pub fn clk_sys(&mut self) -> CLK_SYS_W<SOURCE_SPEC> {
         CLK_SYS_W::new(self, 0)
     }

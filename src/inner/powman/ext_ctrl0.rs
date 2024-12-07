@@ -52,31 +52,26 @@ impl R {
 impl W {
     #[doc = "Bits 0:5 - selects from gpio 0->30 set to 31 to disable this feature"]
     #[inline(always)]
-    #[must_use]
     pub fn gpio_select(&mut self) -> GPIO_SELECT_W<EXT_CTRL0_SPEC> {
         GPIO_SELECT_W::new(self, 0)
     }
     #[doc = "Bit 8"]
     #[inline(always)]
-    #[must_use]
     pub fn init(&mut self) -> INIT_W<EXT_CTRL0_SPEC> {
         INIT_W::new(self, 8)
     }
     #[doc = "Bit 12"]
     #[inline(always)]
-    #[must_use]
     pub fn init_state(&mut self) -> INIT_STATE_W<EXT_CTRL0_SPEC> {
         INIT_STATE_W::new(self, 12)
     }
     #[doc = "Bit 13 - output level when entering the low power state"]
     #[inline(always)]
-    #[must_use]
     pub fn lp_entry_state(&mut self) -> LP_ENTRY_STATE_W<EXT_CTRL0_SPEC> {
         LP_ENTRY_STATE_W::new(self, 13)
     }
     #[doc = "Bit 14 - output level when exiting the low power state"]
     #[inline(always)]
-    #[must_use]
     pub fn lp_exit_state(&mut self) -> LP_EXIT_STATE_W<EXT_CTRL0_SPEC> {
         LP_EXIT_STATE_W::new(self, 14)
     }

@@ -131,13 +131,13 @@ impl RegisterBlock {
     pub fn proc0_intf_iter(&self) -> impl Iterator<Item = &PROC0_INTF> {
         self.proc0_intf.iter()
     }
-    #[doc = "0x278..0x290 - Interrupt status after masking &amp; forcing for proc0"]
+    #[doc = "0x278..0x290 - Interrupt status after masking & forcing for proc0"]
     #[inline(always)]
     pub const fn proc0_ints(&self, n: usize) -> &PROC0_INTS {
         &self.proc0_ints[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x278..0x290 - Interrupt status after masking &amp; forcing for proc0"]
+    #[doc = "0x278..0x290 - Interrupt status after masking & forcing for proc0"]
     #[inline(always)]
     pub fn proc0_ints_iter(&self) -> impl Iterator<Item = &PROC0_INTS> {
         self.proc0_ints.iter()
@@ -164,13 +164,13 @@ impl RegisterBlock {
     pub fn proc1_intf_iter(&self) -> impl Iterator<Item = &PROC1_INTF> {
         self.proc1_intf.iter()
     }
-    #[doc = "0x2c0..0x2d8 - Interrupt status after masking &amp; forcing for proc1"]
+    #[doc = "0x2c0..0x2d8 - Interrupt status after masking & forcing for proc1"]
     #[inline(always)]
     pub const fn proc1_ints(&self, n: usize) -> &PROC1_INTS {
         &self.proc1_ints[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x2c0..0x2d8 - Interrupt status after masking &amp; forcing for proc1"]
+    #[doc = "0x2c0..0x2d8 - Interrupt status after masking & forcing for proc1"]
     #[inline(always)]
     pub fn proc1_ints_iter(&self) -> impl Iterator<Item = &PROC1_INTS> {
         self.proc1_ints.iter()
@@ -197,13 +197,13 @@ impl RegisterBlock {
     pub fn dormant_wake_intf_iter(&self) -> impl Iterator<Item = &DORMANT_WAKE_INTF> {
         self.dormant_wake_intf.iter()
     }
-    #[doc = "0x308..0x320 - Interrupt status after masking &amp; forcing for dormant_wake"]
+    #[doc = "0x308..0x320 - Interrupt status after masking & forcing for dormant_wake"]
     #[inline(always)]
     pub const fn dormant_wake_ints(&self, n: usize) -> &DORMANT_WAKE_INTS {
         &self.dormant_wake_ints[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x308..0x320 - Interrupt status after masking &amp; forcing for dormant_wake"]
+    #[doc = "0x308..0x320 - Interrupt status after masking & forcing for dormant_wake"]
     #[inline(always)]
     pub fn dormant_wake_ints_iter(&self) -> impl Iterator<Item = &DORMANT_WAKE_INTS> {
         self.dormant_wake_ints.iter()
@@ -361,14 +361,14 @@ module"]
 pub type PROC0_INTF = crate::Reg<proc0_intf::PROC0_INTF_SPEC>;
 #[doc = "Interrupt Force for proc0"]
 pub mod proc0_intf;
-#[doc = "PROC0_INTS (rw) register accessor: Interrupt status after masking &amp; forcing for proc0  
+#[doc = "PROC0_INTS (rw) register accessor: Interrupt status after masking & forcing for proc0  
 
 You can [`read`](crate::Reg::read) this register and get [`proc0_ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`proc0_ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@proc0_ints`]
 module"]
 pub type PROC0_INTS = crate::Reg<proc0_ints::PROC0_INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing for proc0"]
+#[doc = "Interrupt status after masking & forcing for proc0"]
 pub mod proc0_ints;
 #[doc = "PROC1_INTE (rw) register accessor: Interrupt Enable for proc1  
 
@@ -388,14 +388,14 @@ module"]
 pub type PROC1_INTF = crate::Reg<proc1_intf::PROC1_INTF_SPEC>;
 #[doc = "Interrupt Force for proc1"]
 pub mod proc1_intf;
-#[doc = "PROC1_INTS (rw) register accessor: Interrupt status after masking &amp; forcing for proc1  
+#[doc = "PROC1_INTS (rw) register accessor: Interrupt status after masking & forcing for proc1  
 
 You can [`read`](crate::Reg::read) this register and get [`proc1_ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`proc1_ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@proc1_ints`]
 module"]
 pub type PROC1_INTS = crate::Reg<proc1_ints::PROC1_INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing for proc1"]
+#[doc = "Interrupt status after masking & forcing for proc1"]
 pub mod proc1_ints;
 #[doc = "DORMANT_WAKE_INTE (rw) register accessor: Interrupt Enable for dormant_wake  
 
@@ -415,12 +415,12 @@ module"]
 pub type DORMANT_WAKE_INTF = crate::Reg<dormant_wake_intf::DORMANT_WAKE_INTF_SPEC>;
 #[doc = "Interrupt Force for dormant_wake"]
 pub mod dormant_wake_intf;
-#[doc = "DORMANT_WAKE_INTS (rw) register accessor: Interrupt status after masking &amp; forcing for dormant_wake  
+#[doc = "DORMANT_WAKE_INTS (rw) register accessor: Interrupt status after masking & forcing for dormant_wake  
 
 You can [`read`](crate::Reg::read) this register and get [`dormant_wake_ints::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`dormant_wake_ints::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).  
 
 For information about available fields see [`mod@dormant_wake_ints`]
 module"]
 pub type DORMANT_WAKE_INTS = crate::Reg<dormant_wake_ints::DORMANT_WAKE_INTS_SPEC>;
-#[doc = "Interrupt status after masking &amp; forcing for dormant_wake"]
+#[doc = "Interrupt status after masking & forcing for dormant_wake"]
 pub mod dormant_wake_ints;

@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 7:31 - Vector table base offset field. It contains bits\\[31:7\\]
 of the offset of the table base from the bottom of the memory map."]
     #[inline(always)]
-    #[must_use]
     pub fn tbloff(&mut self) -> TBLOFF_W<VTOR_SPEC> {
         TBLOFF_W::new(self, 7)
     }

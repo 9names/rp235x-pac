@@ -43,25 +43,21 @@ impl R {
 impl W {
     #[doc = "Bit 0 - If set to 1, a watchdog reset will restore powman defaults, reset the timer, reset the switched core domain and run the full power-on state machine (PSM) sequence This does not rely on clk_ref running"]
     #[inline(always)]
-    #[must_use]
     pub fn reset_powman_async(&mut self) -> RESET_POWMAN_ASYNC_W<WDSEL_SPEC> {
         RESET_POWMAN_ASYNC_W::new(self, 0)
     }
     #[doc = "Bit 4 - If set to 1, a watchdog reset will restore powman defaults, reset the timer, reset the switched core power domain and run the full power-on state machine (PSM) sequence This relies on clk_ref running. Use reset_powman_async if that may not be true"]
     #[inline(always)]
-    #[must_use]
     pub fn reset_powman(&mut self) -> RESET_POWMAN_W<WDSEL_SPEC> {
         RESET_POWMAN_W::new(self, 4)
     }
     #[doc = "Bit 8 - If set to 1, a watchdog reset will reset the switched core power domain and run the full power-on state machine (PSM) sequence From a user perspective it is the same as setting RSM_WDSEL_PROC_COLD From a hardware debug perspective it has the same effect as a power-on reset for the switched core power domain"]
     #[inline(always)]
-    #[must_use]
     pub fn reset_swcore(&mut self) -> RESET_SWCORE_W<WDSEL_SPEC> {
         RESET_SWCORE_W::new(self, 8)
     }
     #[doc = "Bit 12 - If set to 1, a watchdog reset will run the full power-on state machine (PSM) sequence From a user perspective it is the same as setting RSM_WDSEL_PROC_COLD From a hardware debug perspective it has the same effect as a reset from a glitch detector"]
     #[inline(always)]
-    #[must_use]
     pub fn reset_rsm(&mut self) -> RESET_RSM_W<WDSEL_SPEC> {
         RESET_RSM_W::new(self, 12)
     }

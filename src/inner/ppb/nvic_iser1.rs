@@ -20,7 +20,6 @@ impl W {
     #[doc = "Bits 0:31 - For SETENA\\[m\\]
 in NVIC_ISER*n, indicates whether interrupt 32*n + m is enabled"]
     #[inline(always)]
-    #[must_use]
     pub fn setena(&mut self) -> SETENA_W<NVIC_ISER1_SPEC> {
         SETENA_W::new(self, 0)
     }
